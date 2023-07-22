@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LambScript : MonoBehaviour
+public class CordeiroScript : MonoBehaviour
 {
     private int inputX, velocidade = 60, altura = 0;
     private float distancia;
@@ -26,18 +26,21 @@ public class LambScript : MonoBehaviour
     void movimento()
     {
         /*Fazendo a funcionalidade do pulo*/
-        if (Input.GetKey(KeyCode.Space) && (distancia < 40) && (!pulo))
-        {
-            altura += 10;
+        if (Input.GetKey("space") && (distancia < 50) && (!pulo))
+        {   
+            animator.SetBool("NoAr", true);
+            altura += 6;
         }
         else if ((distancia <= 25))
         {
+            animator.SetBool("NoAr", false);
             altura = 0;
             pulo = false;
         }
-        else if ((distancia >= 40))
+        else if ((distancia >= 50))
         {
-            altura -= 5;
+            animator.SetBool("NoAr", true);
+            altura -= 4;
             pulo = true;
         }
 
