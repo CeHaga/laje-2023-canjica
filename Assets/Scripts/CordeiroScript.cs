@@ -1,107 +1,117 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Scripting.APIUpdating;
 
 public class CordeiroScript : MonoBehaviour
 {
-    private int inputX, velocidade = 60, altura = 0;
-    private float distancia;
-    private bool pulo = false, olhandoEsquerda=false;
+    /*Definindo as constantes do movimento*/
+    private const int VEL_ANDANDO = 60, VEL_CORRENDO = 150, FORCA_PULO = 50;
+    private const float TEMPO_PULO = 0.25f;   /*Este será o tempo que o usuário terá que segurar o botão de pulo para que o personagem atinja sua altura máxima*/
+
+    /*Variáveis do personagem*/
+    private int velocidadeAtual;
+    private float timerPulo;
+    private bool isPulando, releasedJump=true;
+
     public BoxCollider2D hitbox1;
-    public Animator animator;
-    private Vector2 vector2;
     public GameObject chao;
+    private Rigidbody2D rig;
+    private Animator animator;
+    private SpriteRenderer sr;
 
     void Awake()
     {
-        hitbox1 = gameObject.GetComponent<BoxCollider2D>();
+        hitbox1 = GetComponent<BoxCollider2D>();
+        rig = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
+        timerPulo = TEMPO_PULO;
     }
 
     void Update()
     {
-        distancia = (int)transform.position.y - (int)chao.transform.position.y;
-        movimento();
+        Move();
+        Jump();
+        Attack();
     }
 
-    void movimento()
+    void Move()
+    {
+        /*Fazendo a funcionalidade de andar para a esquerda e direita*/
+        float movimento = Input.GetAxis("Horizontal");    /*Se não pressionar nada, o valor é zero. Se for esquerda é -1 e direita é 1*/
+        if (movimento < 0)
+        {
+            sr.flipX = true;    /*Rotacionando o personagem para a esquerda*/
+
+            velocidadeAtual = VEL_ANDANDO;
+            if (Input.GetKey(KeyCode.LeftShift))
+                velocidadeAtual = VEL_CORRENDO;
+            else
+                velocidadeAtual = VEL_ANDANDO;
+
+        }
+        else if (movimento > 0)
+        {
+            sr.flipX = false;     /*Rotacionando o personagem para a direita*/
+
+            velocidadeAtual = VEL_ANDANDO;
+            if (Input.GetKey(KeyCode.LeftShift))
+                velocidadeAtual = VEL_CORRENDO;
+            else
+                velocidadeAtual = VEL_ANDANDO;
+
+        }
+        else
+            velocidadeAtual = 0;
+
+        rig.velocity = new Vector2(movimento * velocidadeAtual, rig.velocity.y);     /*Usando o velocity para mover o personagem*/
+        animator.SetFloat("Velocidade", velocidadeAtual);
+    }
+
+    void Jump()
     {
         /*Fazendo a funcionalidade do pulo*/
-        if (Input.GetKey("space") && (distancia < 50) && (!pulo))
-        {   
-            animator.SetBool("NoAr", true);
-            altura += 6;
-        }
-        else if ((distancia <= 25))
+        if (Input.GetButton("Jump"))      /*Detectando se foi apertado o botão de pulo (por padrão é o space)*/
         {
-            animator.SetBool("NoAr", false);
-            altura = 0;
-            pulo = false;
-        }
-        else if ((distancia >= 50))
-        {
-            animator.SetBool("NoAr", true);
-            altura -= 4;
-            pulo = true;
-        }
-
-        /*Fazendo a funcionalidade de andar para a esquerda e direita*/
-        if (Input.GetKey("left"))
-        {
-            if (!olhandoEsquerda)    /*Rotacionando o personagem*/
-            {
-                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
-                olhandoEsquerda = true;
-            }
-            inputX = -1;
-            velocidade = 60;
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                velocidade = 150;
-            }
+            if (timerPulo > 0)                /*Fazendo o sistema de pular mais alto se segurar o botão de pulo por um tempo*/
+                timerPulo -= Time.deltaTime;
             else
-            {
-                velocidade = 60;
-            }
+                rig.gravityScale = 40;
 
+            if (!isPulando && releasedJump)            /*Se estiver no chão e o botão de pulo não estiver sendo segurado*/
+            {
+                rig.gravityScale = 0;
+                rig.AddForce(new Vector2(0, FORCA_PULO), ForceMode2D.Impulse);
+                animator.SetBool("NoAr", true);
+                isPulando = true;
+            }
+            releasedJump = false;
         }
-        else if (Input.GetKey("right"))
+        if (Input.GetButtonUp("Jump"))     /*Quando soltar o botão de pulo*/
         {
-            if (olhandoEsquerda)       /*Rotacionando o personagem*/
-            {
-                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
-                olhandoEsquerda = false;
-            }
-            inputX = 1;
-            velocidade = 60;
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                velocidade = 150;
-            }
-            else
-            {
-                velocidade = 60;
-            }
-
+            timerPulo = TEMPO_PULO;
+            rig.gravityScale = 40;
+            releasedJump = true;
         }
-        else
-        {
-            velocidade = 0;
-            inputX = 0;
-        }
+    }
 
+    void Attack()
+    {
         /*Fazendo a funcionalidade de hitbox e vida*/
         if (Input.GetKey(KeyCode.Z))
-        {
             hitbox1.enabled = true;
-        }
         else
-        {
             hitbox1.enabled = false;
-        }
+    }
 
-        animator.SetFloat("Velocidade", velocidade);
-        transform.position = new Vector2(transform.position.x + inputX * velocidade * Time.deltaTime, transform.position.y + altura * Time.deltaTime);
-        vector2 = transform.position;
+    void OnCollisionEnter2D(Collision2D colisao)
+    {
+        if (colisao.gameObject.tag == "Ground")       /*Verificando se o personagem está em contato com algum gameObject com a tag "Ground"*/
+        {
+            isPulando = false;
+            animator.SetBool("NoAr", false);
+        }
     }
 
 }
