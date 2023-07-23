@@ -44,7 +44,6 @@ public class CordeiroScript : MonoBehaviour
         {
             sr.flipX = true;    /*Rotacionando o personagem para a esquerda*/
 
-
             velocidadeAtual = VEL_ANDANDO;
             if (Input.GetKey(KeyCode.LeftShift))
                 velocidadeAtual = VEL_CORRENDO;
