@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Scripting.APIUpdating;
+using UnityEngine.SceneManagement;
 
 public class CordeiroScript : MonoBehaviour
 {
@@ -111,6 +112,15 @@ public class CordeiroScript : MonoBehaviour
         {
             isPulando = false;
             animator.SetBool("NoAr", false);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D colisao)
+    {
+        if (colisao.gameObject.tag == "ProxFase")      /*Verificando se o personagem encostou no trigger que o leva para a próxima fase*/
+        {
+            Debug.Log("Passou de fase");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
