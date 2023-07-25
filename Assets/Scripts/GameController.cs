@@ -10,10 +10,8 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P) && !isMorto)
+        if ((Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape)) && !isMorto)
             isPausado = !isPausado;
-        if (Input.GetKeyDown(KeyCode.Escape))
-            isPausado = false;
         telaPause.SetActive(isPausado);    /*Ativando ou desativando a tela de Pause*/
         if (Input.GetKeyDown(KeyCode.S))
         {

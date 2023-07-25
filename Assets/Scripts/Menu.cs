@@ -9,4 +9,9 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(1);    /*Carregando a primeira fase*/
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();    /*Saindo do jogo*/
+    }
 }
