@@ -2,14 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Boss : MonoBehaviour
 {
-
-    public GameObject vidaVerde, vidaVermelha;
     public float vida = 100, danoPercentual = 0;
-    private float corPercentual = 1;
-    public Animator animator;
-    public SpriteRenderer cor;
     public CordeiroScript cordeiro;
     private Vector2 targetPosition;
 
@@ -52,20 +47,13 @@ public class Enemy : MonoBehaviour
             danoPercentual = (cordeiro.dano/vida);
         }
 
-
-        corPercentual -= danoPercentual;
-
-        cor.color = new Color (0, 1, 0.12f, corPercentual);
         vida -= cordeiro.dano;
-
-        Debug.Log(danoPercentual);
-        Debug.Log(corPercentual);
 
 
         if(vida <= 0) /*Verfica se o personagem perdeu toda sua vida*/
         {
             vida = 0;
-            animator.SetBool("Vida", false);
         }
     }
 }
+

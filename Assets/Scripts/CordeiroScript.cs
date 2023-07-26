@@ -4,23 +4,32 @@ using UnityEngine;
 
 public class CordeiroScript : MonoBehaviour
 {
-    private int inputX, velocidade = 60, altura = 0;
-    private float distancia;
-    private bool pulo = false, olhandoEsquerda=false;
-    public BoxCollider2D hitbox1;
+    public int inputX, dano = 5, velocidade = 60, velocidadePulo = 5;
+    private float vida = 80, danoPercentual = 0;
+    private float distancia, altura = 0;
+    private bool pulo = false, olhandoEsquerda=false, ataqueEmAndamento = false;
+    public BoxCollider2D hitbox1, hitbox2;
     public Animator animator;
+    public Enemy inimigo;
     private Vector2 vector2;
     public GameObject chao;
 
     void Awake()
     {
         hitbox1 = gameObject.GetComponent<BoxCollider2D>();
+        hitbox2 = gameObject.GetComponent<BoxCollider2D>();
     }
 
     void Update()
-    {
+    {   
+
         distancia = (int)transform.position.y - (int)chao.transform.position.y;
+
         movimento();
+        if(Input.GetKey("z") && !ataqueEmAndamento)
+        {
+            StartCoroutine(ataque());
+        }
     }
 
     void movimento()
@@ -29,7 +38,7 @@ public class CordeiroScript : MonoBehaviour
         if (Input.GetKey("space") && (distancia < 50) && (!pulo))
         {   
             animator.SetBool("NoAr", true);
-            altura += 6;
+            altura += 200.0f * velocidadePulo * Time.deltaTime;
         }
         else if ((distancia <= 25))
         {
@@ -40,7 +49,7 @@ public class CordeiroScript : MonoBehaviour
         else if ((distancia >= 50))
         {
             animator.SetBool("NoAr", true);
-            altura -= 4;
+            altura -= 1500.0f * Time.deltaTime;
             pulo = true;
         }
 
@@ -89,19 +98,29 @@ public class CordeiroScript : MonoBehaviour
             inputX = 0;
         }
 
-        /*Fazendo a funcionalidade de hitbox e vida*/
-        if (Input.GetKey(KeyCode.Z))
-        {
-            hitbox1.enabled = true;
-        }
-        else
-        {
-            hitbox1.enabled = false;
-        }
-
         animator.SetFloat("Velocidade", velocidade);
         transform.position = new Vector2(transform.position.x + inputX * velocidade * Time.deltaTime, transform.position.y + altura * Time.deltaTime);
         vector2 = transform.position;
+    
+    }
+    IEnumerator ataque()
+    {   
+            animator.SetBool("Ataque", true);
+
+            yield return new WaitForSeconds(0.2f); /* Aguardar até a animação do hit efetivamente aconteça.*/
+
+            if(animator.GetBool("Ataque"))
+            {
+                ataqueEmAndamento = true;
+                hitbox1.enabled = true;
+            }
+
+            yield return new WaitForSeconds(0.2f); /* Aguardar até a animação do hit efetivamente aconteça.*/
+
+            hitbox1.enabled = false;
+
+            animator.SetBool("Ataque", false);
+            ataqueEmAndamento = false;
     }
 
 }

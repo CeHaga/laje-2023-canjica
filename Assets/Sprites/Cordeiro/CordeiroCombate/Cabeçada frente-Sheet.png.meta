@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 70
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,427 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_0"
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 893
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52efb2271b4862342a47988e87363340
+      internalID: -1581187598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_1"
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 893
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19787898c70972f46b07ff767e512b62
+      internalID: -479349704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_2"
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 893
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d945f534db733ca43b970b4aeced0e06
+      internalID: -1176562987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_3"
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 893
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfde97544070882438412f65e653de07
+      internalID: -131514815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_4"
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 893
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c1c3140b09f7e449cb7d1f50888e02
+      internalID: 1779447295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_5"
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 637
+        width: 53
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa28a90b669609489e55f6df46b5784
+      internalID: 228057305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_6"
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 636
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795e41b9184269a4a99cad0c80b139d3
+      internalID: 112494288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_7"
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 636
+        width: 48
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f5647330fd3864fa832b97193e9e18
+      internalID: 931266608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_8"
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 637
+        width: 51
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb854a9a8ec11642b8abd19ef2f584d
+      internalID: -1519583722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_9"
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 639
+        width: 59
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636fef67fac611a4c9305ceeee6f7a4a
+      internalID: 466251171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_10"
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 383
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0841b89f97cba459a549dbf6f3920e
+      internalID: 1883918211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_11"
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 379
+        width: 67
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a718f3f5d54f84099849848255afb3
+      internalID: -305070644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_12"
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 382
+        width: 67
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646ec0be7343c484a89ccae481af563f
+      internalID: 1702575931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_13"
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 382
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5471c5222f1d54744a0ac76ec1b1072b
+      internalID: -135966133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_14"
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 381
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc74880f761f174eba038ec8df5aae0
+      internalID: -948860293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_15"
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 125
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534d54147ad75e54d914a04c707ec39d
+      internalID: 1689470368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_16"
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 125
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eef2da2d649dae42b5c656122ee38b9
+      internalID: 1648075669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_17"
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 126
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87692826b6c688f4291d2f7dc58c52a1
+      internalID: 1947813085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_18"
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 126
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa45cf36625ed549b9ddb151d5b2eba
+      internalID: -393929714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Cabe\xE7ada frente-Sheet_19"
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 126
+        width: 47
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b578c86ccf8bc0748a4c1bde4dae2eb5
+      internalID: -11150921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +552,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Cabe\xE7ada frente-Sheet_0": -1581187598
+      "Cabe\xE7ada frente-Sheet_1": -479349704
+      "Cabe\xE7ada frente-Sheet_10": 1883918211
+      "Cabe\xE7ada frente-Sheet_11": -305070644
+      "Cabe\xE7ada frente-Sheet_12": 1702575931
+      "Cabe\xE7ada frente-Sheet_13": -135966133
+      "Cabe\xE7ada frente-Sheet_14": -948860293
+      "Cabe\xE7ada frente-Sheet_15": 1689470368
+      "Cabe\xE7ada frente-Sheet_16": 1648075669
+      "Cabe\xE7ada frente-Sheet_17": 1947813085
+      "Cabe\xE7ada frente-Sheet_18": -393929714
+      "Cabe\xE7ada frente-Sheet_19": -11150921
+      "Cabe\xE7ada frente-Sheet_2": -1176562987
+      "Cabe\xE7ada frente-Sheet_3": -131514815
+      "Cabe\xE7ada frente-Sheet_4": 1779447295
+      "Cabe\xE7ada frente-Sheet_5": 228057305
+      "Cabe\xE7ada frente-Sheet_6": 112494288
+      "Cabe\xE7ada frente-Sheet_7": 931266608
+      "Cabe\xE7ada frente-Sheet_8": -1519583722
+      "Cabe\xE7ada frente-Sheet_9": 466251171
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
