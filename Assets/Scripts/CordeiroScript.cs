@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Scripting.APIUpdating;
+using UnityEngine.SceneManagement;
 
 public class CordeiroScript : MonoBehaviour
 {
@@ -15,7 +16,6 @@ public class CordeiroScript : MonoBehaviour
     private bool isPulando, releasedJump=true;
 
     public BoxCollider2D hitbox1;
-    public GameObject chao;
     private Rigidbody2D rig;
     private Animator animator;
     private SpriteRenderer sr;
@@ -72,7 +72,7 @@ public class CordeiroScript : MonoBehaviour
     void Jump()
     {
         /*Fazendo a funcionalidade do pulo*/
-        if (Input.GetButton("Jump"))      /*Detectando se foi apertado o botão de pulo (por padrão é o space)*/
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))      /*Detectando se foi apertado o botão de pulo (no nosso caso será o W ou seta para cima)*/
         {
             if (timerPulo > 0)                /*Fazendo o sistema de pular mais alto se segurar o botão de pulo por um tempo*/
                 timerPulo -= Time.deltaTime;
@@ -82,13 +82,13 @@ public class CordeiroScript : MonoBehaviour
             if (!isPulando && releasedJump)            /*Se estiver no chão e o botão de pulo não estiver sendo segurado*/
             {
                 rig.gravityScale = 0;
-                rig.AddForce(new Vector2(0, FORCA_PULO), ForceMode2D.Impulse);
+                rig.AddForce(new Vector2(0, FORCA_PULO), ForceMode2D.Impulse);    /*Adicionando força ao rigidbody para fazer o personagem pular*/
                 animator.SetBool("NoAr", true);
                 isPulando = true;
             }
             releasedJump = false;
         }
-        if (Input.GetButtonUp("Jump"))     /*Quando soltar o botão de pulo*/
+        if ((Input.GetKeyUp(KeyCode.W) && !Input.GetKey(KeyCode.UpArrow)) || (Input.GetKeyUp(KeyCode.UpArrow) && !Input.GetKey(KeyCode.W)))     /*Quando soltar o botão de pulo*/
         {
             timerPulo = TEMPO_PULO;
             rig.gravityScale = 40;
@@ -111,6 +111,15 @@ public class CordeiroScript : MonoBehaviour
         {
             isPulando = false;
             animator.SetBool("NoAr", false);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D colisao)
+    {
+        if (colisao.gameObject.tag == "ProxFase")      /*Verificando se o personagem encostou no trigger que o leva para a próxima fase*/
+        {
+            Debug.Log("Passou de fase");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
