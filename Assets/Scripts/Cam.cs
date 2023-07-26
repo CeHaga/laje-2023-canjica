@@ -6,7 +6,7 @@ public class Cam : MonoBehaviour
 {
     private Transform player;
     private Vector3 seguindo;
-    private int posicaoInicialX=-225, posicaoFinalX=277;      /*Aqui devem ser definidas as posições X mínimas e máximas do personagem em cada fase*/
+    private int posicaoInicialX= -129, posicaoFinalX=200;      /*Aqui devem ser definidas as posições X mínimas e máximas do personagem em cada fase*/
 
     void Start()
     {
