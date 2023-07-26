@@ -461,7 +461,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitbox1: {fileID: 2084663085}
-  chao: {fileID: 642657080}
 --- !u!61 &2084663080
 BoxCollider2D:
   m_ObjectHideFlags: 0
