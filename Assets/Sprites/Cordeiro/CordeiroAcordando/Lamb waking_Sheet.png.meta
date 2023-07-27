@@ -1,0 +1,3572 @@
+fileFormatVersion: 2
+guid: bce4c4101e1b98f4fabb9e682f2dc87a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 3453
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61c529d31072fe438132caf090f6f36
+      internalID: 1310801718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 3452
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c539108cd07fa4e98f548721f80e00
+      internalID: -1752089390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 3452
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a3eb893d0853f45b186fcef9047ceb
+      internalID: -856934495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 3452
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db9db26dcece084aba00d1a5dfd7611
+      internalID: -1468214793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 3452
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffb7f856f75f0a4d9dd83a1f6efabce
+      internalID: -666154396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 3451
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d68482d377726f418577ca90c7735ff
+      internalID: 1912182053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 3451
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589efaa1f5014f54cac67b29e4cd8d71
+      internalID: -969012628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 3451
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491d853554de12344b236ac12be2c04b
+      internalID: -442408809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 3451
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766509ae9f0b4124886e722f22a69578
+      internalID: 119451784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 3451
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b2ef18967699d49a8bbfd1c7c691f2
+      internalID: -398404855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 3451
+        width: 60
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8c913d4d9faed4f8b694ecbcec1a96
+      internalID: -665235979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 3451
+        width: 60
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df466fabab085754c92998fc4c20782b
+      internalID: 791131291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 3451
+        width: 60
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb1fdfea3ecf644d8ca11c41c176cc4
+      internalID: -652305897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 3451
+        width: 60
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fd5cdbed4835d429675aba61f443b8
+      internalID: -2021128024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 3195
+        width: 60
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bc644dbc35fa94fb3fa494a937ab3c
+      internalID: 1067600409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 3195
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c68805f142930e49978de49ebca82b4
+      internalID: 1709144447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 3195
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e047282e161021248ac1a444a2c99595
+      internalID: 1037094733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 3196
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715b541ec3f7a0f4eacaca93aa599c31
+      internalID: 338422507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 3196
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba6adff79b5b0745854db63dfc98d0d
+      internalID: -1424760214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 3196
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5779cc62916612b468f18963d40163b2
+      internalID: 1997799227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 3196
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd98e68c92873154789fd7eebb8cc047
+      internalID: 949672144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 3197
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76beea8f22a681441b82e2ebc740714e
+      internalID: -314242280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 3196
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f14fd076587c0438934cc9915111b6
+      internalID: -257839911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 3196
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e0ccbcc367d35408c5bbc86cd86e56
+      internalID: 8493288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 3196
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9de7e7ae6fbd5749a986abf7c07938b
+      internalID: 1407018794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 3195
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b208276abc40ac7488a03841185779ce
+      internalID: -786641555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 3195
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73ca3a28c684504f87a442c730a3f60
+      internalID: 108036146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 3195
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb429f7df3afeb44594a79d7b13f6c2c
+      internalID: -129109266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 2939
+        width: 60
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3a9b5f8f111684683c12f82aa5aebc
+      internalID: 2143101591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 2939
+        width: 60
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2359b94de131c2d44a65a9179e4aaeff
+      internalID: 865062217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 2939
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6be128d66d54194db21a4e1ba414f3a
+      internalID: 1240596190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 2939
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9effd7ccb0e77b449afffbd908a62aab
+      internalID: 2046900899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 2939
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e71f722c83c5545b827590020fa038
+      internalID: -850696796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2939
+        width: 59
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f262d6fcb05bbe74f9d4bcfa8bfb9c15
+      internalID: -1559539117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 2940
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7af5ade57a7164cba8c14718dba697
+      internalID: 1111303070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 2940
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f976e31e91e4a4a83490033a0d0668
+      internalID: 993975333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 2940
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5594661e24a2f4c9c8bbf36fec7a37
+      internalID: 746673077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 2940
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79114841ff242944ea7393f213b02f40
+      internalID: 988660051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 2940
+        width: 57
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc13f5c862011040b1646d831ea9364
+      internalID: -36064328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 2941
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b146ef33f662afe4ba23054e9cc27c0f
+      internalID: -1845794090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 2941
+        width: 58
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd5f4b637dd8554aa161541f1952131
+      internalID: -624130373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 2939
+        width: 61
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166d51f2b0c2e72468bafcdd6af4cf03
+      internalID: 1699041838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 2683
+        width: 62
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05ad143577e77d47b9118f92f755f18
+      internalID: 1906950445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 2686
+        width: 62
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78eec17ff7d08b84fb4f538adf1ff4a6
+      internalID: -728047854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 2687
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7a08b36ad7e634e872454d7237ebf8
+      internalID: 1879450249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 2687
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d711ff022cf53498ad2fcf902e4362
+      internalID: 562035564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 2687
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea1dabd374c0eb4f90e791303bbc267
+      internalID: -1460934029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2687
+        width: 54
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3c840c92e48c148853b7aad926606b
+      internalID: -1160731186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 2687
+        width: 50
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f5b9390b70c6848a36a97c3b90be58
+      internalID: -994746239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 2687
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023511c3e7bfdde468f59d4c29f6c1d3
+      internalID: 1818695250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 2687
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04128157c8951d744b41283e9718950f
+      internalID: 137693617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 2687
+        width: 50
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb357d7bbc157f74cb8c1d93b45843b4
+      internalID: 1574880506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 2687
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e20e0f9dc5b2e458de1b75ff58b378
+      internalID: 272307315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 2687
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a00fdfb2ea5f2043891601e4e00eabd
+      internalID: -475177972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 2687
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a08f9c71c4a48741a9c06c2fc6758b3
+      internalID: 1998724462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 2687
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f6e1075cc39f546aae1055325cb7e7
+      internalID: 1428211203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 2431
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc1afaeb0ddb64428ca0a28fed9d03c
+      internalID: -906542941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 2431
+        width: 48
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701fd8d5d9bd4154692a6c10bbee5906
+      internalID: 1278851459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 2431
+        width: 48
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0dea48a6b69ef44cbfa23246e6c0183
+      internalID: -511463200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 2431
+        width: 48
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6744bd62845175d4eab881e00a342804
+      internalID: -1453379856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 2431
+        width: 48
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7627bb97fdac5b24d9c566a794390fdb
+      internalID: -609720004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2431
+        width: 48
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb3fed64fbaf88448e7886c96c09733
+      internalID: 1150921417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 2431
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d0721c5eaa68e45bf89b886b16552d
+      internalID: -916972207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 2431
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44aea3e45f400640bd3246857c097f8
+      internalID: -1387451613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 2431
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1635a59be746304bae6383f6179fc00
+      internalID: 367316704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 2431
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1334b3f4d2d25624f80ff645467a2d9d
+      internalID: 898020983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 2431
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16027b921826d9142ad0744127edb2bd
+      internalID: 500417460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 2431
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a277958270f603498eba67df4dac432
+      internalID: 1571296354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 2431
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f25f33293aa51409e8654cf5c2804b
+      internalID: -1818668797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 2431
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ad70ece3a58604e93f6a53270d3b73
+      internalID: 1395033965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 2175
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09bfddb0f46852048be655cbb660a793
+      internalID: -480063164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 2175
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5349f75f5eefec4ebb6aed9d6e2af35
+      internalID: -726938798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 2175
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4bf84013625214daab922404c06173
+      internalID: 1890846118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 2175
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511e639d0fa2a4b4d9672444c353e4c5
+      internalID: 773265932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 2175
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9ad04c71fcd964ca3752659cfd0faf
+      internalID: -1695279344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 2175
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf3346e432b0a247b75292f69d64cc2
+      internalID: -1931659475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 2175
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0c7203989356a4c91613e9b9e74be7
+      internalID: 282829170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 2175
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05364575e47550e49a6ef37b5cb76e58
+      internalID: -281823002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 2175
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a26ad6726b3114b8dc5744d31a43a3
+      internalID: -387039642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 2175
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c477b2aed097eb4fa5f719c9f155eba
+      internalID: 1962743780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 2175
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d1fbb09a7f85749ad8437e45b1a964
+      internalID: 2061758462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 2175
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dae8329812e4104f91d9a1fd13e9981
+      internalID: 951595658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 2175
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415f660c7039c0f40ba533f4f220b1ba
+      internalID: 573203076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 2175
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7146246a9493745458577e9091244689
+      internalID: 1405205098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1919
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc4ef3097bd8ec448da17529ce8c44c
+      internalID: -1081981350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1919
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6fc3427d7028346bef04ab2a20e650
+      internalID: 740403873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1919
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d896c514d0c89a4e9ca7be2e8f8e19a
+      internalID: 2073378582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1919
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbca7549127de543bde123cfdecc13b
+      internalID: -587954938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1919
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facc9bbf7e6380b44bec3e41d859d2d3
+      internalID: 661084813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1919
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae0653f5eb9c27429b138d1af4cb705
+      internalID: 295252177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 1919
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e864a1a78cc924a4ab9f375dc08e0e40
+      internalID: 576298144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 1919
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03d1785a6720494298eb84a8bddea8d
+      internalID: -1521542711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 1919
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f58366135c07344b20bfd08d90a094
+      internalID: 676591344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1919
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185ebb88259d99d4e8491497255323e0
+      internalID: -1819757333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 1919
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a710688b38d3e654d894f78671bcaa3e
+      internalID: -2076118233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 1919
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fe4c1df3536aa4b9462af3cd1bccdb
+      internalID: 1413392972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 1919
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05cc3d013c38b145a9056f69b961a8e
+      internalID: -1572525005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 1919
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe4280efa4f2344fa8fb41c4175392a
+      internalID: 834552307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 1663
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f954bbc227926c43a79cb4fa4f2ba6a
+      internalID: 1394752826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1663
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0220f40013dcb4a920b796e8c4c017
+      internalID: -1332635349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1663
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9afaf528a594e42b1c1783f928bfc0
+      internalID: -1950509633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1663
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d6d702cc52dfc4db56df150182ce7c
+      internalID: -1621300495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1663
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40aef50f1c00c3f409ce94c82aa58233
+      internalID: 367698895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1663
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee42fcb367065347a90c574e8ff0c8b
+      internalID: 248105811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 1664
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c2825671df5d94ab276861fc13f27e
+      internalID: 341216031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 1664
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db9ea435234c364793fca7987aacfd7
+      internalID: -1844744543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 1664
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60a8152ff91008409f01280d710d6d3
+      internalID: -848972995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1664
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba715b07120ef524399fa3026b876b33
+      internalID: -1943526953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 1664
+        width: 48
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326080de5c1982942b4c6f4d613ec62a
+      internalID: -1612077282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 2932
+        y: 1664
+        width: 47
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cbf6b219a16344f9bb02e1ffe7acd1
+      internalID: 1189516175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 1663
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a923cdc4366be2d459f4ba01b3866aed
+      internalID: -1010865421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 3445
+        y: 1663
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87384b720f3ea24dae81c5d873df2b1
+      internalID: 1582628888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1407
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d2c8052c8cc4246a467536686c9ae6
+      internalID: -1494998029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1407
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48bc0d0d6cc9f44fa0c82890b67b21d
+      internalID: 2028597793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1407
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ea9221395e56f43827ec53323a1faf
+      internalID: -985134461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 1407
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1e307f13235a64cb56ccffab5fd773
+      internalID: -308706115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1407
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c24a8baa9dff944b9766b0b8135ce7
+      internalID: 620497635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1407
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae8c1002815aac4797eacf983dd354a
+      internalID: 701990014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 1406
+        width: 46
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e628e65671f7844a5e7c868495f515
+      internalID: 378449531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 1406
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19f96b05f9134346b9d3593e3201016
+      internalID: 1508292073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_120
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 1406
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b395e792b1e622e4fb6f4d0dcd3b6474
+      internalID: -263276557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1407
+        width: 46
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b84c615a2cf22d42b9b6da357037ec2
+      internalID: -342018239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_122
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 1407
+        width: 47
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5da6ea061af2242915a1421645dbfe
+      internalID: -1869670345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_123
+      rect:
+        serializedVersion: 2
+        x: 2931
+        y: 1407
+        width: 47
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8378b0fb394db4495bc1e7040418a3
+      internalID: 661392797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_124
+      rect:
+        serializedVersion: 2
+        x: 3186
+        y: 1408
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282b64ee279beb8498bc906e8d2877e5
+      internalID: 1078787093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_125
+      rect:
+        serializedVersion: 2
+        x: 3441
+        y: 1408
+        width: 49
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e770cbbac70f3f5439419fa812371c9e
+      internalID: 585285228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_126
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1153
+        width: 49
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fd4455bac90724186691d1590f694a
+      internalID: -1988924706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_127
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1154
+        width: 49
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb3e1f8e9370fe4691dc0fb7654bbd9
+      internalID: 1151291435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_128
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1153
+        width: 49
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6327066b1aca1f544bd8576d484449a3
+      internalID: -937826689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_129
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 1153
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb3e617bc2b1874cb03d2934b172ff3
+      internalID: 1897575571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_130
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 1153
+        width: 47
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69c48675a1cb7a4fb27e58dbdb314c7
+      internalID: 534922323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_131
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 1153
+        width: 47
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bfd71545b4a5e4d9d600751bec9f15
+      internalID: -323234310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_132
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1152
+        width: 46
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0449fd181acb8458528983dbcafbc0
+      internalID: 2000411170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_133
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 1152
+        width: 45
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae88cf95d2d85854c9ce1b1b0e91a7b8
+      internalID: 1355847539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_134
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1152
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1924cd3d0c1b72e4cb3d0f63ddc2ec5f
+      internalID: 1501470684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_135
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 1152
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd765cbac0514fc489f26af592ae595f
+      internalID: 617864970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_136
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 1152
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915d6ed0ab925e04ba188bd61b8f57e5
+      internalID: -1688375351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_137
+      rect:
+        serializedVersion: 2
+        x: 2915
+        y: 1151
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32fb3bdb0048634e9fcb8e7e31c329f
+      internalID: 659189441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_138
+      rect:
+        serializedVersion: 2
+        x: 3171
+        y: 1151
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 015fb1cc933e32645a456257931fb4c8
+      internalID: 1478522377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_139
+      rect:
+        serializedVersion: 2
+        x: 3427
+        y: 1151
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed18d3e72cce0b4ab87f5b14f82ce1a
+      internalID: 1741672222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_140
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 895
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c8fb1078ce4a74685b17f351835ed8
+      internalID: 1969061004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_141
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 895
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b130f5c9b23c142829675039325957
+      internalID: -1970222305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_142
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 895
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d2ce432bb300545a790c4d8ecaf63a
+      internalID: 455775677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_143
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 895
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be259c9287a1bd84daad1d8305c6224f
+      internalID: -1750383074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_144
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 895
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450e32044b087cc408a33beaa3272f7e
+      internalID: 956966602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_145
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 895
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ec0268701bb7041adb0186248365d6
+      internalID: 627386453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_146
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 895
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449e87c3bf16c774598961656b0190aa
+      internalID: -115958296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_147
+      rect:
+        serializedVersion: 2
+        x: 1894
+        y: 895
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0e9e8a8dcd053499126f6bbaaae33a
+      internalID: 652233093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_148
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 895
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca73ff272e426a244b57ad72ba1e9068
+      internalID: 998461025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_149
+      rect:
+        serializedVersion: 2
+        x: 2406
+        y: 894
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd75ce7d9b6a844e9eec4b76378756b
+      internalID: 487865656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_150
+      rect:
+        serializedVersion: 2
+        x: 2662
+        y: 894
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd6f781b4e3ec14194c76ff1490e8b2
+      internalID: -578189990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_151
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 894
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71e40ee88c55fb458c9eb577428bdb4
+      internalID: 1099598129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_152
+      rect:
+        serializedVersion: 2
+        x: 3176
+        y: 894
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e23d5b2484865429eb61d5ec836b0f
+      internalID: 1295409364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_153
+      rect:
+        serializedVersion: 2
+        x: 3432
+        y: 894
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4fde5c2f744fd4da3219636cd13b1e
+      internalID: -1986588146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_154
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 638
+        width: 49
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c28abfccb46e347bc0a2089d7f996c
+      internalID: -162269978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamb waking_Sheet_155
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 638
+        width: 49
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee55cc9b77ac9bb42a9bfd5e4c149608
+      internalID: 483433927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Lamb waking_Sheet_0: 1310801718
+      Lamb waking_Sheet_1: -1752089390
+      Lamb waking_Sheet_10: -665235979
+      Lamb waking_Sheet_100: -1950509633
+      Lamb waking_Sheet_101: -1621300495
+      Lamb waking_Sheet_102: 367698895
+      Lamb waking_Sheet_103: 248105811
+      Lamb waking_Sheet_104: 341216031
+      Lamb waking_Sheet_105: -1844744543
+      Lamb waking_Sheet_106: -848972995
+      Lamb waking_Sheet_107: -1943526953
+      Lamb waking_Sheet_108: -1612077282
+      Lamb waking_Sheet_109: 1189516175
+      Lamb waking_Sheet_11: 791131291
+      Lamb waking_Sheet_110: -1010865421
+      Lamb waking_Sheet_111: 1582628888
+      Lamb waking_Sheet_112: -1494998029
+      Lamb waking_Sheet_113: 2028597793
+      Lamb waking_Sheet_114: -985134461
+      Lamb waking_Sheet_115: -308706115
+      Lamb waking_Sheet_116: 620497635
+      Lamb waking_Sheet_117: 701990014
+      Lamb waking_Sheet_118: 378449531
+      Lamb waking_Sheet_119: 1508292073
+      Lamb waking_Sheet_12: -652305897
+      Lamb waking_Sheet_120: -263276557
+      Lamb waking_Sheet_121: -342018239
+      Lamb waking_Sheet_122: -1869670345
+      Lamb waking_Sheet_123: 661392797
+      Lamb waking_Sheet_124: 1078787093
+      Lamb waking_Sheet_125: 585285228
+      Lamb waking_Sheet_126: -1988924706
+      Lamb waking_Sheet_127: 1151291435
+      Lamb waking_Sheet_128: -937826689
+      Lamb waking_Sheet_129: 1897575571
+      Lamb waking_Sheet_13: -2021128024
+      Lamb waking_Sheet_130: 534922323
+      Lamb waking_Sheet_131: -323234310
+      Lamb waking_Sheet_132: 2000411170
+      Lamb waking_Sheet_133: 1355847539
+      Lamb waking_Sheet_134: 1501470684
+      Lamb waking_Sheet_135: 617864970
+      Lamb waking_Sheet_136: -1688375351
+      Lamb waking_Sheet_137: 659189441
+      Lamb waking_Sheet_138: 1478522377
+      Lamb waking_Sheet_139: 1741672222
+      Lamb waking_Sheet_14: 1067600409
+      Lamb waking_Sheet_140: 1969061004
+      Lamb waking_Sheet_141: -1970222305
+      Lamb waking_Sheet_142: 455775677
+      Lamb waking_Sheet_143: -1750383074
+      Lamb waking_Sheet_144: 956966602
+      Lamb waking_Sheet_145: 627386453
+      Lamb waking_Sheet_146: -115958296
+      Lamb waking_Sheet_147: 652233093
+      Lamb waking_Sheet_148: 998461025
+      Lamb waking_Sheet_149: 487865656
+      Lamb waking_Sheet_15: 1709144447
+      Lamb waking_Sheet_150: -578189990
+      Lamb waking_Sheet_151: 1099598129
+      Lamb waking_Sheet_152: 1295409364
+      Lamb waking_Sheet_153: -1986588146
+      Lamb waking_Sheet_154: -162269978
+      Lamb waking_Sheet_155: 483433927
+      Lamb waking_Sheet_16: 1037094733
+      Lamb waking_Sheet_17: 338422507
+      Lamb waking_Sheet_18: -1424760214
+      Lamb waking_Sheet_19: 1997799227
+      Lamb waking_Sheet_2: -856934495
+      Lamb waking_Sheet_20: 949672144
+      Lamb waking_Sheet_21: -314242280
+      Lamb waking_Sheet_22: -257839911
+      Lamb waking_Sheet_23: 8493288
+      Lamb waking_Sheet_24: 1407018794
+      Lamb waking_Sheet_25: -786641555
+      Lamb waking_Sheet_26: 108036146
+      Lamb waking_Sheet_27: -129109266
+      Lamb waking_Sheet_28: 2143101591
+      Lamb waking_Sheet_29: 865062217
+      Lamb waking_Sheet_3: -1468214793
+      Lamb waking_Sheet_30: 1240596190
+      Lamb waking_Sheet_31: 2046900899
+      Lamb waking_Sheet_32: -850696796
+      Lamb waking_Sheet_33: -1559539117
+      Lamb waking_Sheet_34: 1111303070
+      Lamb waking_Sheet_35: 993975333
+      Lamb waking_Sheet_36: 746673077
+      Lamb waking_Sheet_37: 988660051
+      Lamb waking_Sheet_38: -36064328
+      Lamb waking_Sheet_39: -1845794090
+      Lamb waking_Sheet_4: -666154396
+      Lamb waking_Sheet_40: -624130373
+      Lamb waking_Sheet_41: 1699041838
+      Lamb waking_Sheet_42: 1906950445
+      Lamb waking_Sheet_43: -728047854
+      Lamb waking_Sheet_44: 1879450249
+      Lamb waking_Sheet_45: 562035564
+      Lamb waking_Sheet_46: -1460934029
+      Lamb waking_Sheet_47: -1160731186
+      Lamb waking_Sheet_48: -994746239
+      Lamb waking_Sheet_49: 1818695250
+      Lamb waking_Sheet_5: 1912182053
+      Lamb waking_Sheet_50: 137693617
+      Lamb waking_Sheet_51: 1574880506
+      Lamb waking_Sheet_52: 272307315
+      Lamb waking_Sheet_53: -475177972
+      Lamb waking_Sheet_54: 1998724462
+      Lamb waking_Sheet_55: 1428211203
+      Lamb waking_Sheet_56: -906542941
+      Lamb waking_Sheet_57: 1278851459
+      Lamb waking_Sheet_58: -511463200
+      Lamb waking_Sheet_59: -1453379856
+      Lamb waking_Sheet_6: -969012628
+      Lamb waking_Sheet_60: -609720004
+      Lamb waking_Sheet_61: 1150921417
+      Lamb waking_Sheet_62: -916972207
+      Lamb waking_Sheet_63: -1387451613
+      Lamb waking_Sheet_64: 367316704
+      Lamb waking_Sheet_65: 898020983
+      Lamb waking_Sheet_66: 500417460
+      Lamb waking_Sheet_67: 1571296354
+      Lamb waking_Sheet_68: -1818668797
+      Lamb waking_Sheet_69: 1395033965
+      Lamb waking_Sheet_7: -442408809
+      Lamb waking_Sheet_70: -480063164
+      Lamb waking_Sheet_71: -726938798
+      Lamb waking_Sheet_72: 1890846118
+      Lamb waking_Sheet_73: 773265932
+      Lamb waking_Sheet_74: -1695279344
+      Lamb waking_Sheet_75: -1931659475
+      Lamb waking_Sheet_76: 282829170
+      Lamb waking_Sheet_77: -281823002
+      Lamb waking_Sheet_78: -387039642
+      Lamb waking_Sheet_79: 1962743780
+      Lamb waking_Sheet_8: 119451784
+      Lamb waking_Sheet_80: 2061758462
+      Lamb waking_Sheet_81: 951595658
+      Lamb waking_Sheet_82: 573203076
+      Lamb waking_Sheet_83: 1405205098
+      Lamb waking_Sheet_84: -1081981350
+      Lamb waking_Sheet_85: 740403873
+      Lamb waking_Sheet_86: 2073378582
+      Lamb waking_Sheet_87: -587954938
+      Lamb waking_Sheet_88: 661084813
+      Lamb waking_Sheet_89: 295252177
+      Lamb waking_Sheet_9: -398404855
+      Lamb waking_Sheet_90: 576298144
+      Lamb waking_Sheet_91: -1521542711
+      Lamb waking_Sheet_92: 676591344
+      Lamb waking_Sheet_93: -1819757333
+      Lamb waking_Sheet_94: -2076118233
+      Lamb waking_Sheet_95: 1413392972
+      Lamb waking_Sheet_96: -1572525005
+      Lamb waking_Sheet_97: 834552307
+      Lamb waking_Sheet_98: 1394752826
+      Lamb waking_Sheet_99: -1332635349
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

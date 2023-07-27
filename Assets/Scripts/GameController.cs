@@ -13,6 +13,8 @@ public class GameController : MonoBehaviour
     private bool isPausado = false, isMorto = false;
     private bool acabouMostrarTelaGameOver = false;
 
+    public GameObject testeCordeiro;
+
     private void Update()
     {
         if (isMorto && !acabouMostrarTelaGameOver)
