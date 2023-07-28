@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,10 +9,9 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     public GameObject telaPause, telaGameOver;   /*Estes serão os objetos referentes às telas de Pause e Game Over*/
-    private bool isPausado = false, isMorto = false;
-    private bool acabouMostrarTelaGameOver = false;
+    public GameObject paredeInvisivel1, paredeInvisivel2;
 
-    public GameObject testeCordeiro;
+    private bool isPausado = false, isMorto = false, acabouMostrarTelaGameOver = false;
 
     private void Update()
     {
@@ -36,9 +34,8 @@ public class GameController : MonoBehaviour
             Time.timeScale = 1;    /*Reiniciando todos os processos do jogo*/
     }
 
-    public bool mostrarTelaGameover()
+    public bool mostrarTelaGameover()     /*Esta função faz com que a tela de Game Over apareça com um efeito de fade in*/
     {
-        Debug.Log("Opa");
         Transform[] objetosFilhos = telaGameOver.GetComponentsInChildren<Transform>();
         int cont = 0;
         for (int i = 0; i < objetosFilhos.Length; i++)

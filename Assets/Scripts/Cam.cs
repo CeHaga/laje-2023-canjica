@@ -1,28 +1,54 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Cam : MonoBehaviour
 {
     private Transform player;
     private Vector3 seguindo;
-    private int posicaoInicialX= -129, posicaoFinalX=200;      /*Aqui devem ser definidas as posições X mínimas e máximas do personagem em cada fase*/
-    private bool achouPlayer = false;
-    public static bool acabouAnimacaoAcordar = true;
+    public GameObject paredeInvisivel1, paredeInvisivel2;
+    private int posicaoInicialX= 0, posicaoFinalX;      /*Aqui devem ser definidas as posições X mínimas e máximas do personagem em cada fase*/
+
+    private bool isCorredor=false, paredeInvisivel1Destruida = false, paredeInvisivel2Destruida = false;
+    public static int numInimigosDerrotados = 0;    /*Esta variável precisa ser incrementada a cada vez que um inimigo for derrotado*/
+    private int distanciaInicialPersonagem=174;     /*Esta variável define em que posição o personagem estará na câmera*/
+
+    private void Start()
+    {
+        string nomeCena = SceneManager.GetActiveScene().name;
+        if (nomeCena.Contains("Corredor"))     /*Se estiver na parte do corredor*/
+            isCorredor = true;
+        player = GameObject.FindGameObjectWithTag("Player").transform;    /*Aqui eu procuro o gameobject com a tag "Player"*/
+    }
 
     void FixedUpdate()
     {
-        if (acabouAnimacaoAcordar && !achouPlayer)
+        /*Fazendo a movimentação da câmera*/
+        if(isCorredor)     /*A movimentação da câmera só vai ocorrer no corredor*/
         {
-            player = GameObject.FindGameObjectWithTag("Player").transform;    /*Aqui eu procuro o gameobject com a tag "Player"*/
-            achouPlayer = true;
-        }
-        if (achouPlayer)
-        {
+            /*os valores a seguir irão mudar de acordo com o tamanho da fase e da posição das paredes invisíveis*/
+            if (numInimigosDerrotados < 4)
+                posicaoFinalX = 465 - distanciaInicialPersonagem;
+            else if (numInimigosDerrotados < 8)
+                posicaoFinalX = 1470 - distanciaInicialPersonagem;
+            else
+                posicaoFinalX = 2000 - distanciaInicialPersonagem;
+
             if (player.position.x >= posicaoInicialX && player.position.x <= posicaoFinalX)
             {
-                seguindo = new Vector3(player.position.x, transform.position.y, transform.position.z);    /*Esta variável guardará a posição do personagem apenas no eixo x*/
+                seguindo = new Vector3(player.position.x + distanciaInicialPersonagem, transform.position.y, transform.position.z);    /*Esta variável guardará a posição do personagem apenas no eixo x*/
                 transform.position = Vector3.Lerp(transform.position, seguindo, 10 * Time.deltaTime);     /*Aqui é definido o que a camerá irá seguir e com qual suavidade*/
+            }
+
+            /*Destruindo as paredes invisíveis*/
+            if (numInimigosDerrotados == 4 && !paredeInvisivel1Destruida)
+            {
+                Destroy(paredeInvisivel1);
+                paredeInvisivel1Destruida = true;
+            }
+            if (numInimigosDerrotados == 8 && !paredeInvisivel2Destruida)
+            {
+                Destroy(paredeInvisivel2);
+                paredeInvisivel2Destruida = true;
             }
         }
     }

@@ -34,6 +34,8 @@ public class CordeiroScript : MonoBehaviour
         Move();
         Jump();
         Attack();
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+            Cam.numInimigosDerrotados++;
     }
 
     void Move()
