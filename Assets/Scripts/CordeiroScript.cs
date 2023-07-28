@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
 public class CordeiroScript : MonoBehaviour
 {
     /*Definindo as constantes do movimento*/
-    private const int VEL_ANDANDO = 60, VEL_CORRENDO = 150, FORCA_PULO = 50;
+    private const float VEL_ANDANDO = 1.5f, VEL_CORRENDO = 3, FORCA_PULO = 1;
     private const float TEMPO_PULO = 0.25f;   /*Este será o tempo que o usuário terá que segurar o botão de pulo para que o personagem atinja sua altura máxima*/
 
     /*Variáveis do personagem*/
-    private int velocidadeAtual;
+    private float velocidadeAtual;
     private float timerPulo;
     private bool isPulando, releasedJump=true;
 
@@ -79,7 +79,7 @@ public class CordeiroScript : MonoBehaviour
             if (timerPulo > 0)                /*Fazendo o sistema de pular mais alto se segurar o botão de pulo por um tempo*/
                 timerPulo -= Time.deltaTime;
             else
-                rig.gravityScale = 40;
+                rig.gravityScale = 1;
 
             if (!isPulando && releasedJump)            /*Se estiver no chão e o botão de pulo não estiver sendo segurado*/
             {
@@ -93,7 +93,7 @@ public class CordeiroScript : MonoBehaviour
         if ((Input.GetKeyUp(KeyCode.W) && !Input.GetKey(KeyCode.UpArrow)) || (Input.GetKeyUp(KeyCode.UpArrow) && !Input.GetKey(KeyCode.W)))     /*Quando soltar o botão de pulo*/
         {
             timerPulo = TEMPO_PULO;
-            rig.gravityScale = 40;
+            rig.gravityScale = 1;
             releasedJump = true;
         }
     }

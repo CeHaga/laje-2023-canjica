@@ -6,11 +6,11 @@ public class Cam : MonoBehaviour
     private Transform player;
     private Vector3 seguindo;
     public GameObject paredeInvisivel1, paredeInvisivel2;
-    private int posicaoInicialX= 0, posicaoFinalX;      /*Aqui devem ser definidas as posições X mínimas e máximas do personagem em cada fase*/
+    private float posicaoInicialX= 0, posicaoFinalX;      /*Aqui devem ser definidas as posições X mínimas e máximas do personagem em cada fase*/
 
     private bool isCorredor=false, paredeInvisivel1Destruida = false, paredeInvisivel2Destruida = false;
     public static int numInimigosDerrotados = 0;    /*Esta variável precisa ser incrementada a cada vez que um inimigo for derrotado*/
-    private int distanciaInicialPersonagem=174;     /*Esta variável define em que posição o personagem estará na câmera*/
+    private int distanciaInicialPersonagem=5;     /*Esta variável define em que posição o personagem estará na câmera*/
 
     private void Start()
     {
@@ -27,11 +27,11 @@ public class Cam : MonoBehaviour
         {
             /*os valores a seguir irão mudar de acordo com o tamanho da fase e da posição das paredes invisíveis*/
             if (numInimigosDerrotados < 4)
-                posicaoFinalX = 465 - distanciaInicialPersonagem;
+                posicaoFinalX = 9.2f - distanciaInicialPersonagem;
             else if (numInimigosDerrotados < 8)
-                posicaoFinalX = 1470 - distanciaInicialPersonagem;
+                posicaoFinalX = 27.5f - distanciaInicialPersonagem;
             else
-                posicaoFinalX = 2000 - distanciaInicialPersonagem;
+                posicaoFinalX = 40 - distanciaInicialPersonagem;
 
             if (player.position.x >= posicaoInicialX && player.position.x <= posicaoFinalX)
             {
