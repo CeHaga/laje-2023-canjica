@@ -31,10 +31,9 @@ public class Boss_3 : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.C))
             {
                 anim.SetBool("dano", true);
+                cont++;
                 isParado = false;
             }
-            if (Input.GetKeyDown(KeyCode.LeftControl))
-                cont++;
         }
         if(cont == 4)
         {

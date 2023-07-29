@@ -10,11 +10,17 @@ EditorBuildSettings:
     guid: d60bda64331187540a8be74a1c7baf18
   - enabled: 1
     path: Assets/Scenes/Fase3_Calabouco.unity
-    guid: dce382880499d6947a0a5b3582f52f49
+    guid: a395463bdd8d83a4ea099c6b19d23878
+  - enabled: 1
+    path: Assets/Scenes/TextoInicio.unity
+    guid: 437864cc25c9ecd40a0b172ada239deb
   - enabled: 1
     path: Assets/Scenes/Fase3_Corredor.unity
-    guid: 6ea935cfeb490614ab0e508412afb007
+    guid: aeef616cf2e27474f8fa3d5a09f00a5a
   - enabled: 1
     path: Assets/Scenes/Fase3_Boss.unity
-    guid: acdfceb9868e1004fbe9f1e48618fc07
+    guid: 5fcf59fc4055f1345b6d9308dce3aa51
+  - enabled: 1
+    path: Assets/Scenes/TextoFim.unity
+    guid: 4406713be91c8e749a980346b1e2be4f
   m_configObjects: {}

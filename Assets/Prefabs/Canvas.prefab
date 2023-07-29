@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0018311, y: -0.0000038146973}
-  m_SizeDelta: {x: 1065.9, y: 600}
+  m_AnchoredPosition: {x: -0.0030268, y: -0.0000038146973}
+  m_SizeDelta: {x: 1068.1, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3598511146373797770
 CanvasRenderer:
@@ -113,8 +113,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0015717, y: -251.25363}
-  m_SizeDelta: {x: 1065.9, y: 97.4794}
+  m_AnchoredPosition: {x: -0.0053818, y: -251.25363}
+  m_SizeDelta: {x: 1068.1, y: 97.4794}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8922658220660537145
 CanvasRenderer:
@@ -598,7 +598,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
+    rgba: 3289650
   m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -769,7 +769,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
-  tempoTransicao: 1
 --- !u!1 &5532500663023343640
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,7 +977,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
+    rgba: 3289650
   m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1073,8 +1072,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000022888, y: 296.52225}
-  m_SizeDelta: {x: 1065.9, y: 508.3518}
+  m_AnchoredPosition: {x: 0.0125, y: 296.52225}
+  m_SizeDelta: {x: 1067, y: 508.3518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7218305999588523851
 CanvasRenderer:
