@@ -126,8 +126,7 @@ public class CordeiroScript : MonoBehaviour
         if (colisao.gameObject.tag == "ProxFase")      /*Verificando se o personagem encostou no trigger que o leva para a próxima fase*/
         {
             Debug.Log("Passou de fase");
-            Transicao_Fases transicao = new Transicao_Fases();
-            //transicao.carregarProximaCena();      /*Chamando a função de carregar a próxima cena*/
+            Transicao_Fases.transicao = true;     /*Chamando a função de carregar a próxima cena*/
         }
     }
 
