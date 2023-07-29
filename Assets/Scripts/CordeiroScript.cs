@@ -5,53 +5,80 @@ using UnityEngine;
 public class CordeiroScript : MonoBehaviour
 {
     public int inputX, dano = 5, velocidade = 60, velocidadePulo = 5;
-    private float vida = 80, danoPercentual = 0;
+    public float vida = 80, danoPercentual = 0;
     private float distancia, altura = 0;
-    private bool pulo = false, olhandoEsquerda=false, ataqueEmAndamento = false;
-    public BoxCollider2D hitbox1, hitbox2;
+    private bool pulo = false, olhandoEsquerda=false, ataqueEmAndamento = false, desvioEmAndamento = false, knockback = false;
+    public BoxCollider2D hitbox;
+    public CapsuleCollider2D hurtbox;
     public Animator animator;
+    public SpriteRenderer sprite;
     public Enemy inimigo;
-    private Vector2 vector2;
+    private Vector3 distanciaKnockback, salvaPosicao;
     public GameObject chao;
 
     void Awake()
     {
-        hitbox1 = gameObject.GetComponent<BoxCollider2D>();
-        hitbox2 = gameObject.GetComponent<BoxCollider2D>();
+        sprite = gameObject.GetComponent<SpriteRenderer>();
+
     }
 
     void Update()
     {   
+        if(vida > 0){
+            distancia = (int)transform.position.y - (int)chao.transform.position.y;
 
-        distancia = (int)transform.position.y - (int)chao.transform.position.y;
+            movimento();
+            if(Input.GetKey("z") && !ataqueEmAndamento)
+            {
+                StartCoroutine(ataque());
+            }
 
-        movimento();
-        if(Input.GetKey("z") && !ataqueEmAndamento)
+            if(Input.GetKey("x") && !desvioEmAndamento)
+            {
+                StartCoroutine(desvio());
+            }
+        }
+
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        
+        Debug.Log("Entrada:" + other.tag);
+
+        if(other.tag == "AtaqueInimigo")
         {
-            StartCoroutine(ataque());
+            StartCoroutine(recebeDano());
+            Debug.Log("Tomei dano ai");
+        }
+
+        if(other.tag == "VisãoInimigo"){
+            inimigo.visão = true;
+        }
+
+        if(other.tag == "HitboxRange"){
+            inimigo.hitboxRange = true;
+            inimigo.visão = false;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+
+        Debug.Log("Saída:" + other.tag);
+
+        if(other.tag == "VisãoInimigo"){
+            inimigo.visão = false;
+        }
+
+        if(other.tag == "HitboxRange"){
+            inimigo.hitboxRange = false;
+            inimigo.visão = true;
         }
     }
 
     void movimento()
     {
-        /*Fazendo a funcionalidade do pulo*/
-        if (Input.GetKey("space") && (distancia < 50) && (!pulo))
-        {   
-            animator.SetBool("NoAr", true);
-            altura += 200.0f * velocidadePulo * Time.deltaTime;
-        }
-        else if ((distancia <= 25))
-        {
-            animator.SetBool("NoAr", false);
-            altura = 0;
-            pulo = false;
-        }
-        else if ((distancia >= 50))
-        {
-            animator.SetBool("NoAr", true);
-            altura -= 1500.0f * Time.deltaTime;
-            pulo = true;
-        }
 
         /*Fazendo a funcionalidade de andar para a esquerda e direita*/
         if (Input.GetKey("left"))
@@ -98,9 +125,9 @@ public class CordeiroScript : MonoBehaviour
             inputX = 0;
         }
 
+
         animator.SetFloat("Velocidade", velocidade);
         transform.position = new Vector2(transform.position.x + inputX * velocidade * Time.deltaTime, transform.position.y + altura * Time.deltaTime);
-        vector2 = transform.position;
     
     }
     IEnumerator ataque()
@@ -112,15 +139,66 @@ public class CordeiroScript : MonoBehaviour
             if(animator.GetBool("Ataque"))
             {
                 ataqueEmAndamento = true;
-                hitbox1.enabled = true;
+                hitbox.enabled = true;
             }
 
-            yield return new WaitForSeconds(0.2f); /* Aguardar até a animação do hit efetivamente aconteça.*/
+            yield return new WaitForSeconds(0.18f); /* Aguardar até a animação do hit efetivamente aconteça.*/
 
-            hitbox1.enabled = false;
+            hitbox.enabled = false;
 
             animator.SetBool("Ataque", false);
             ataqueEmAndamento = false;
+    }
+
+    IEnumerator recebeDano() /*Função chamada ao receber dano*/
+    {
+
+        if(danoPercentual == 0)
+        {
+            danoPercentual = (inimigo.dano/vida);
+        }
+
+        vida -= inimigo.dano;
+
+        if(vida <= 0) /*Verfica se o personagem perdeu toda sua vida*/
+        {
+            vida = 0;
+            animator.SetBool("Vida", false);
+
+            yield return new WaitForSeconds(0.6f);
+
+            transform.position = new Vector2(transform.position.x, transform.position.y - 12f);
+        }
+    
+        //Mudança de cor ao tomar dano
+
+        sprite.color = new Color (0.85f, 0.21f, 0.21f, 1);
+
+        yield return new WaitForSeconds(0.2f);
+       
+        sprite.color = new Color (1, 1, 1, 1);
+        
+        yield return new WaitForSeconds(0.2f);
+
+        sprite.color = new Color (0.85f, 0.21f, 0.21f, 1);
+
+        yield return new WaitForSeconds(0.2f);
+
+        sprite.color = new Color (1, 1, 1, 1);
+
+    }
+    IEnumerator desvio(){
+        animator.SetBool("Desvio", true);
+
+        desvioEmAndamento = true;
+        hurtbox.enabled = false;
+
+        yield return new WaitForSeconds(0.4f);
+            
+        hurtbox.enabled = true;
+        desvioEmAndamento = false;
+        animator.SetBool("Desvio", false);
+
     }
 
 }
