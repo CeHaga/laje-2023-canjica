@@ -1,0 +1,1856 @@
+fileFormatVersion: 2
+guid: dc7c50b186d78c148945ace06980d974
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Monster die-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 2173
+        width: 133
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a73d38af0500a4f91c50844f562ce2
+      internalID: 1892929383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 2173
+        width: 131
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12db996f7cf48784e8c78c6027745a6d
+      internalID: 2049242894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 2173
+        width: 128
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a83b778d3252944abaafc4df317f09
+      internalID: 609708568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 2173
+        width: 126
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15bf7455f87c1e041bf52bf6436c5323
+      internalID: -385480661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 2173
+        width: 123
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f09a30968ab134abeeabac36cb77de
+      internalID: 819382351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 2172
+        width: 124
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa0e1902bfd0e3438f0f4c297353252
+      internalID: 848633750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 2172
+        width: 121
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b92574f6e269d04d8234682e2360f0b
+      internalID: 1092571012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 2172
+        width: 118
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e9302bcbf41fa4e8854a5b137c9ee3
+      internalID: 619544201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 2172
+        width: 114
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda1cff6303949e4dbb85714d7254f21
+      internalID: 1973945312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1916
+        width: 112
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08cb03f712e01df4a9fa05ae715a6704
+      internalID: -1011256740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1916
+        width: 110
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7719b5c9609444f92b93b2175d95e3
+      internalID: 542005708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1916
+        width: 106
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f8c81d01f9f0444b3a6e534de571a6
+      internalID: -1818578968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1916
+        width: 105
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f173c8ebd17302e41831d46a577892d7
+      internalID: 815286334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 1916
+        width: 103
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2beb0fa1234b43c498c1e9ec44387f6c
+      internalID: 1949814489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1916
+        width: 101
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2304fa9a13d3d214188b62b090b36b83
+      internalID: -38280337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 1916
+        width: 100
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862ea40b00d960f41a9b9842b60e78a9
+      internalID: -819912290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 1917
+        width: 98
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c7344db2f1bb04f838882aa541665d
+      internalID: 14094246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 1917
+        width: 94
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2fc90dea500a8419d75b93e1417711
+      internalID: 1351290219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1662
+        width: 91
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b0c1fef2c3dfb4684eee344b9da4ea
+      internalID: 1228995937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1662
+        width: 90
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465a254c64f1ae64193e4fc8f36f6339
+      internalID: 1946989760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1663
+        width: 85
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a88d08f2d453b245821411810c4f7d7
+      internalID: -1780044630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1663
+        width: 83
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711831778147d8149ba1d4eea03c1bde
+      internalID: 251198812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 1663
+        width: 80
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff465c53bbc07744b3797d5877ab8b2
+      internalID: 155919425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 1662
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c15d23f9e94a14da2d73050dff6883
+      internalID: -1278653475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 1663
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84edec5b985a664458ae969a07ffb5fc
+      internalID: 1825154808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 1664
+        width: 75
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb874ca53c6584c4080e2dc0bcfd63ad
+      internalID: -1081427738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 1664
+        width: 76
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb69cc3df5b4c364486459364fcbe3ce
+      internalID: 1837769324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1408
+        width: 76
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84595e556f50e944bd2e3a96b2fc34c
+      internalID: 1655287528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1405
+        width: 77
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2394f789f43b734185377065451b0f5
+      internalID: -795431530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1407
+        width: 76
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750d8981758a732418e1941d42f62536
+      internalID: -807596019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1407
+        width: 78
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68bbd6515a9ea734a92a286c5d5114a2
+      internalID: 1778604708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 1407
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31499961efaac5e458f29522eaa67785
+      internalID: -974341474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 1407
+        width: 78
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14de794d1b459614ab28f6cfaba63bf6
+      internalID: 724669124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 1407
+        width: 78
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2df430c4f260784885ec94429c6cc2c
+      internalID: -60263985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 1407
+        width: 77
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216bbcc33ad205f4a85ae9735736df42
+      internalID: -659735738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 1407
+        width: 77
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec65a6d93bd2d2447bacbc4b8e05868e
+      internalID: 1485607510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1150
+        width: 76
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d2bf290684f1c45ba1b428027064b7
+      internalID: 753697667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1150
+        width: 78
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b390ef75f33544d91555195d7d89df
+      internalID: -2080582864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1150
+        width: 77
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b79ed577731cdb47bea14324129ba7c
+      internalID: -348720254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 1150
+        width: 78
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3819a7dc5d3e443863f84fdcd9b6b0
+      internalID: 581725057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 1149
+        width: 76
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f3deef63cf78145890da23b972d082
+      internalID: -1749914899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 1150
+        width: 78
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e558ec468eadf841a669aaa586e74d6
+      internalID: 581044170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 1150
+        width: 77
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3b63562da3a7042b44e2b2b02f2cc1
+      internalID: 565844925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 1150
+        width: 77
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc9a0fb8b91b754ead1b8c20318c401
+      internalID: -397815456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 1150
+        width: 77
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c029f58fcd56a54f8bc989f7642da8b
+      internalID: -1882002755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 892
+        width: 78
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cde8978d5b322440a529b549caa69f1
+      internalID: -1402984989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 893
+        width: 78
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc0edf567abf254db80aac6c9928aad
+      internalID: 1964186876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 893
+        width: 77
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d9e4db569ce9a43831c4b49a31b5b3
+      internalID: 1905075301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 893
+        width: 78
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff7c570103d025499d004dde41c1b4b
+      internalID: -791466380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 892
+        width: 77
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d956b4a8f9c14154f9c99ed84640bd15
+      internalID: 827907993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 892
+        width: 77
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13c43ff41b1d354687024c74fb5daab
+      internalID: -1133753188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 893
+        width: 76
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c3d6b13a4b6b946816c3e24beb442d
+      internalID: -427453636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 892
+        width: 77
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7385fdab1bab24fb79c0c6424e4c40
+      internalID: -849362422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 891
+        width: 75
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611e2a9541bfb3e4fb535647f7f51e7a
+      internalID: 1740813286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 636
+        width: 73
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1704c0e58cc8047b62cd536ab13d51
+      internalID: -1768336694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 636
+        width: 72
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8911d2db12f495a4c9492439579bdb31
+      internalID: 50349552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 637
+        width: 71
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc52768706ebb7b42b52d7f6ca3e7c21
+      internalID: -1117129039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 636
+        width: 68
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5197e5195ad315349af6070140581811
+      internalID: -198120915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 636
+        width: 69
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7faf3e245a28ccc4b8f346a388b3ab71
+      internalID: 146855089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 636
+        width: 67
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ac99f2f45a4f64f8d82e4453ea625f
+      internalID: 566540219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 634
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86058a24ddc940440b5011e25c24ac46
+      internalID: 567208040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 636
+        width: 64
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aafb45d67ce04941b83d2effae3decd
+      internalID: -855590505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 637
+        width: 64
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6313c1e0f7a209d4f80adf2f05d5877f
+      internalID: 846256266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 379
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd0adc3d497fed44992dba55bd4f01e
+      internalID: -708222582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 380
+        width: 61
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693cb56e62ca6ee4b8b0987d2516845e
+      internalID: 677530469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 379
+        width: 59
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1f9381a0233e7498c23dd8bb5e7731
+      internalID: -431628695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 380
+        width: 59
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176e8d9554dd1ed4fa1c81dcae97ae89
+      internalID: -901831903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 379
+        width: 57
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98286ea1a68245a43b3af9aa5a88bc13
+      internalID: -1850508923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 380
+        width: 51
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5811967cf53a26b4d9d314f0a0d5827c
+      internalID: 296125909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 380
+        width: 51
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6c84ac44300a3488245172da974fb8
+      internalID: -1720801104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 381
+        width: 48
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae71505255eb4e940a94ad3833dc6dec
+      internalID: 1564312028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 381
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a735e46a0b213d4c99e548e39de66c1
+      internalID: 1939794741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 382
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ebc53bfa3c7d58418a697798f3af14f
+      internalID: 1305423541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 124
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97742664a448e264ba844418a7d5b30f
+      internalID: 540118290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 124
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eefac40203b41f4abffc1693b68b2a9
+      internalID: -524719223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 124
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850901a70a644b240ae66ba79e3c1302
+      internalID: 449886609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 124
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b694346cc2475bd4f80630a4739743a7
+      internalID: -1412496641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster die-Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 124
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c250d33e4ef78f0439f5a25c7f6452cf
+      internalID: 1015692824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Monster die-Sheet_0: 1892929383
+      Monster die-Sheet_1: 2049242894
+      Monster die-Sheet_10: 542005708
+      Monster die-Sheet_11: -1818578968
+      Monster die-Sheet_12: 815286334
+      Monster die-Sheet_13: 1949814489
+      Monster die-Sheet_14: -38280337
+      Monster die-Sheet_15: -819912290
+      Monster die-Sheet_16: 14094246
+      Monster die-Sheet_17: 1351290219
+      Monster die-Sheet_18: 1228995937
+      Monster die-Sheet_19: 1946989760
+      Monster die-Sheet_2: 609708568
+      Monster die-Sheet_20: -1780044630
+      Monster die-Sheet_21: 251198812
+      Monster die-Sheet_22: 155919425
+      Monster die-Sheet_23: -1278653475
+      Monster die-Sheet_24: 1825154808
+      Monster die-Sheet_25: -1081427738
+      Monster die-Sheet_26: 1837769324
+      Monster die-Sheet_27: 1655287528
+      Monster die-Sheet_28: -795431530
+      Monster die-Sheet_29: -807596019
+      Monster die-Sheet_3: -385480661
+      Monster die-Sheet_30: 1778604708
+      Monster die-Sheet_31: -974341474
+      Monster die-Sheet_32: 724669124
+      Monster die-Sheet_33: -60263985
+      Monster die-Sheet_34: -659735738
+      Monster die-Sheet_35: 1485607510
+      Monster die-Sheet_36: 753697667
+      Monster die-Sheet_37: -2080582864
+      Monster die-Sheet_38: -348720254
+      Monster die-Sheet_39: 581725057
+      Monster die-Sheet_4: 819382351
+      Monster die-Sheet_40: -1749914899
+      Monster die-Sheet_41: 581044170
+      Monster die-Sheet_42: 565844925
+      Monster die-Sheet_43: -397815456
+      Monster die-Sheet_44: -1882002755
+      Monster die-Sheet_45: -1402984989
+      Monster die-Sheet_46: 1964186876
+      Monster die-Sheet_47: 1905075301
+      Monster die-Sheet_48: -791466380
+      Monster die-Sheet_49: 827907993
+      Monster die-Sheet_5: 848633750
+      Monster die-Sheet_50: -1133753188
+      Monster die-Sheet_51: -427453636
+      Monster die-Sheet_52: -849362422
+      Monster die-Sheet_53: 1740813286
+      Monster die-Sheet_54: -1768336694
+      Monster die-Sheet_55: 50349552
+      Monster die-Sheet_56: -1117129039
+      Monster die-Sheet_57: -198120915
+      Monster die-Sheet_58: 146855089
+      Monster die-Sheet_59: 566540219
+      Monster die-Sheet_6: 1092571012
+      Monster die-Sheet_60: 567208040
+      Monster die-Sheet_61: -855590505
+      Monster die-Sheet_62: 846256266
+      Monster die-Sheet_63: -708222582
+      Monster die-Sheet_64: 677530469
+      Monster die-Sheet_65: -431628695
+      Monster die-Sheet_66: -901831903
+      Monster die-Sheet_67: -1850508923
+      Monster die-Sheet_68: 296125909
+      Monster die-Sheet_69: -1720801104
+      Monster die-Sheet_7: 619544201
+      Monster die-Sheet_70: 1564312028
+      Monster die-Sheet_71: 1939794741
+      Monster die-Sheet_72: 1305423541
+      Monster die-Sheet_73: 540118290
+      Monster die-Sheet_74: -524719223
+      Monster die-Sheet_75: 449886609
+      Monster die-Sheet_76: -1412496641
+      Monster die-Sheet_77: 1015692824
+      Monster die-Sheet_8: 1973945312
+      Monster die-Sheet_9: -1011256740
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

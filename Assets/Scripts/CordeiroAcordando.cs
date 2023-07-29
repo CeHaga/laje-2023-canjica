@@ -5,7 +5,6 @@ public class CordeiroAcordando : MonoBehaviour
 {
     public GameObject cordeiro;
     private Animator anim;
-    public float teste1, teste2;
 
     private void Start()
     {
@@ -13,14 +12,9 @@ public class CordeiroAcordando : MonoBehaviour
         StartCoroutine(comecarAnimacao());
     }
 
-    private void subirPersonagem1()
+    private void sentarNaCama()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y + teste1, transform.position.z);     /*Subindo um pouco o personagem do cordeiro acordando*/
-    }
-
-    private void subirPersonagem2()
-    {
-        transform.position = new Vector3(transform.position.x, transform.position.y + teste2, transform.position.z);      /*Subindo mais um pouco o personagem do cordeiro acordando*/
+        transform.position = new Vector3(transform.position.x, transform.position.y + 0.06f, transform.position.z);     /*Subindo um pouco o personagem do cordeiro acordando*/
     }
 
     private IEnumerator comecarAnimacao()

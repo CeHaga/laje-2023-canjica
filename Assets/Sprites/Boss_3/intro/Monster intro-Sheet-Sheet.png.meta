@@ -1,0 +1,1614 @@
+fileFormatVersion: 2
+guid: 7b0d44fd143265047bd8424838b85451
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 196
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be317d898c3becb4f91f2b90ed3acf31
+      internalID: 1484653002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1920
+        width: 197
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a8031c113d0ab408fcc6f6292e83f5
+      internalID: 672669286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1920
+        width: 199
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5858a2d68112fc148a29a58ed958c35e
+      internalID: 1438667732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1920
+        width: 204
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a99f5c367a32546a4debdb175fda81
+      internalID: -692220836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1920
+        width: 204
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7d3bdd5cfca13409d1725e095bcb35
+      internalID: -601340784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1920
+        width: 206
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7bb1e2547f7fb459250a6f5625dece
+      internalID: 766722056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1920
+        width: 203
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c8088c5386d704580d1a6bf55e87a0
+      internalID: 1135316467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1920
+        width: 204
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2f10b41b7f06d499661db629b9f034
+      internalID: 1197327762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 1920
+        width: 204
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a82f06860a723409a9696d54938316
+      internalID: 1993573737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1663
+        width: 201
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7777b002e08ad134bae0349735faa2a3
+      internalID: -1098699087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1663
+        width: 202
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698b183ea12a07f43b9a67b07ff39bd9
+      internalID: -1302097364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1663
+        width: 201
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f116ca6412ace4bae6ed151d7bd221
+      internalID: 1392063980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1659
+        width: 192
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a0633e7fb2f8b468a4b890d42e8099
+      internalID: -621959669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1663
+        width: 187
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8c241b1d38c4c4ca9146fcbef2598f
+      internalID: 1682992209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 1663
+        width: 179
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d8498f0de179244a7c7f19abee1c26
+      internalID: 288113546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 1663
+        width: 175
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eedfe6e004e7ad46ba32781a21dbf76
+      internalID: -1150894557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 1663
+        width: 174
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54134885c6933e447a0186ece389c294
+      internalID: -31198232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 1663
+        width: 171
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdc982a93ae3da49b1cca5fe0cfa004
+      internalID: -19439116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1408
+        width: 166
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1ca1da4b0472f45846d9ad2efb1c85
+      internalID: 1298987178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 1408
+        width: 166
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f7dbbd3c222e14392b57ec3810ea72
+      internalID: 1832304589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1408
+        width: 163
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d885d9d47ceb3984a92ef3e7a43bb638
+      internalID: 1579562454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1408
+        width: 161
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb18d082d7b0bed4794e459b130c245a
+      internalID: 734581011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 1408
+        width: 157
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945b1d211eb9b514eb3c92d54b6e4ec9
+      internalID: 1721054598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 1408
+        width: 160
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80761cbbf52daee42aa664e4900068c2
+      internalID: -647723684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 1408
+        width: 161
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915c398ebdaedbf438a54de6066aace8
+      internalID: 1545819809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 1408
+        width: 160
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91774502eac1d6a4c8dc35526ed52181
+      internalID: -1531265695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1408
+        width: 163
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132b603799e95f3449a36643dfa51c94
+      internalID: -1799517059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1149
+        width: 164
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87680d45f39d4434e81ff8fe36927f7f
+      internalID: 1215474322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1151
+        width: 166
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a26a4459d3803c40b12d1ce9083e921
+      internalID: -1834560232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1151
+        width: 166
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d97941de7d5b14b93106fa90d2f96d
+      internalID: -1299148105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1151
+        width: 168
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0bdff7e689ab34a955c4c1e34fcedb
+      internalID: 689223573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1151
+        width: 169
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3251311222db6a0438604c8bba218d93
+      internalID: -79409647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 1151
+        width: 169
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673c733d53842fe4c8c7777fb169f6ef
+      internalID: -328899332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 1151
+        width: 171
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4303794538868744f903f5cf12c143d9
+      internalID: -596518475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 1151
+        width: 171
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e582456b9b38e274da5e9bfef58d6b37
+      internalID: -510414695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 1151
+        width: 170
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de35bffc0e330114dba8222c9c25025f
+      internalID: 1588319361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 896
+        width: 166
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e27e09da1af7144b41a7f98446d144
+      internalID: 842095946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 896
+        width: 166
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae4e8b919752754db2247779c235788
+      internalID: -40466753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 896
+        width: 164
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056996ebca5a58d4caf39e930ed18801
+      internalID: 1794644800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 895
+        width: 161
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25eb1fc639a43e8488582785a764ef5c
+      internalID: 538762099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 896
+        width: 160
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c884ec3675ddf4399ef90da226a408
+      internalID: -394709871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 896
+        width: 159
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c11a4ef4c3f4446a33ec8a7362e532
+      internalID: 439881399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 896
+        width: 155
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d30a4bd60f14845897c7fb6712136e
+      internalID: 684772570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1842
+        y: 896
+        width: 155
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26cef43e562fb5f469330dbd8bce6579
+      internalID: 478673785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 896
+        width: 155
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7191026621a12b4e8fa0b40e37db111
+      internalID: 253969736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 639
+        width: 155
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ce855b569235644871899ba581312f
+      internalID: 119566112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 639
+        width: 154
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2081cf07cd1c24080090251b98e4fc
+      internalID: 618629152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 638
+        width: 155
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d01f8ed05a7c744b834616fad5b07f
+      internalID: 17235282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 639
+        width: 154
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48046b94a156c04ca324b2859a3ad86
+      internalID: 1542799764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 639
+        width: 154
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bff134ee169ad14188b9bfef89db9f3
+      internalID: 796545752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 639
+        width: 152
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100f90c12c91639438aa765bfcf2d480
+      internalID: 233908175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 639
+        width: 152
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fff4606b4095a42979b4a77d2c30fe
+      internalID: -1826478323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 1849
+        y: 639
+        width: 151
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655bac777a7ac7941abb25321c997097
+      internalID: 866318709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 2106
+        y: 636
+        width: 150
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ee1798f07925046a9d768ee4e28c83
+      internalID: -799046111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 379
+        width: 148
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc492fb2abd3a234d9520b9e9a19ebb9
+      internalID: -54098037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 379
+        width: 147
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee128b06637129428308d2905eb9dab
+      internalID: -1667246601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 379
+        width: 146
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6990931c62fc955409ca54ddf8be4d90
+      internalID: 65572519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 379
+        width: 144
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357a78f72c94a3044af0889d9768553d
+      internalID: -8897496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 379
+        width: 144
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b502f6482e8f674a9e2c8aab996a592
+      internalID: -1436500408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 380
+        width: 143
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8351f7a28769ac44eb4829e4302a73d5
+      internalID: 1060753413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 380
+        width: 142
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcedc48796d66f849a19eb841cab372d
+      internalID: -1814864114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 380
+        width: 140
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fd6520aa9a7164f80b0d199d1b7eb4
+      internalID: 1703036402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 380
+        width: 138
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e54ff2e402fe4e499874f485bbe5023
+      internalID: 1327023156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 124
+        width: 137
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f2df0ac72d1df4d8d437dce1f167a4
+      internalID: -222892153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 124
+        width: 136
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f880b976335c5ff439cca6392cf9486d
+      internalID: 755059461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 124
+        width: 134
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8105a31f24bede6479b8b01b08a86fd0
+      internalID: -577475231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monster intro-Sheet-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 125
+        width: 133
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0016955c2d83334429ebaf821414f46d
+      internalID: 1983946649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Monster intro-Sheet-Sheet_0: 1484653002
+      Monster intro-Sheet-Sheet_1: 672669286
+      Monster intro-Sheet-Sheet_10: -1302097364
+      Monster intro-Sheet-Sheet_11: 1392063980
+      Monster intro-Sheet-Sheet_12: -621959669
+      Monster intro-Sheet-Sheet_13: 1682992209
+      Monster intro-Sheet-Sheet_14: 288113546
+      Monster intro-Sheet-Sheet_15: -1150894557
+      Monster intro-Sheet-Sheet_16: -31198232
+      Monster intro-Sheet-Sheet_17: -19439116
+      Monster intro-Sheet-Sheet_18: 1298987178
+      Monster intro-Sheet-Sheet_19: 1832304589
+      Monster intro-Sheet-Sheet_2: 1438667732
+      Monster intro-Sheet-Sheet_20: 1579562454
+      Monster intro-Sheet-Sheet_21: 734581011
+      Monster intro-Sheet-Sheet_22: 1721054598
+      Monster intro-Sheet-Sheet_23: -647723684
+      Monster intro-Sheet-Sheet_24: 1545819809
+      Monster intro-Sheet-Sheet_25: -1531265695
+      Monster intro-Sheet-Sheet_26: -1799517059
+      Monster intro-Sheet-Sheet_27: 1215474322
+      Monster intro-Sheet-Sheet_28: -1834560232
+      Monster intro-Sheet-Sheet_29: -1299148105
+      Monster intro-Sheet-Sheet_3: -692220836
+      Monster intro-Sheet-Sheet_30: 689223573
+      Monster intro-Sheet-Sheet_31: -79409647
+      Monster intro-Sheet-Sheet_32: -328899332
+      Monster intro-Sheet-Sheet_33: -596518475
+      Monster intro-Sheet-Sheet_34: -510414695
+      Monster intro-Sheet-Sheet_35: 1588319361
+      Monster intro-Sheet-Sheet_36: 842095946
+      Monster intro-Sheet-Sheet_37: -40466753
+      Monster intro-Sheet-Sheet_38: 1794644800
+      Monster intro-Sheet-Sheet_39: 538762099
+      Monster intro-Sheet-Sheet_4: -601340784
+      Monster intro-Sheet-Sheet_40: -394709871
+      Monster intro-Sheet-Sheet_41: 439881399
+      Monster intro-Sheet-Sheet_42: 684772570
+      Monster intro-Sheet-Sheet_43: 478673785
+      Monster intro-Sheet-Sheet_44: 253969736
+      Monster intro-Sheet-Sheet_45: 119566112
+      Monster intro-Sheet-Sheet_46: 618629152
+      Monster intro-Sheet-Sheet_47: 17235282
+      Monster intro-Sheet-Sheet_48: 1542799764
+      Monster intro-Sheet-Sheet_49: 796545752
+      Monster intro-Sheet-Sheet_5: 766722056
+      Monster intro-Sheet-Sheet_50: 233908175
+      Monster intro-Sheet-Sheet_51: -1826478323
+      Monster intro-Sheet-Sheet_52: 866318709
+      Monster intro-Sheet-Sheet_53: -799046111
+      Monster intro-Sheet-Sheet_54: -54098037
+      Monster intro-Sheet-Sheet_55: -1667246601
+      Monster intro-Sheet-Sheet_56: 65572519
+      Monster intro-Sheet-Sheet_57: -8897496
+      Monster intro-Sheet-Sheet_58: -1436500408
+      Monster intro-Sheet-Sheet_59: 1060753413
+      Monster intro-Sheet-Sheet_6: 1135316467
+      Monster intro-Sheet-Sheet_60: -1814864114
+      Monster intro-Sheet-Sheet_61: 1703036402
+      Monster intro-Sheet-Sheet_62: 1327023156
+      Monster intro-Sheet-Sheet_63: -222892153
+      Monster intro-Sheet-Sheet_64: 755059461
+      Monster intro-Sheet-Sheet_65: -577475231
+      Monster intro-Sheet-Sheet_66: 1983946649
+      Monster intro-Sheet-Sheet_7: 1197327762
+      Monster intro-Sheet-Sheet_8: 1993573737
+      Monster intro-Sheet-Sheet_9: -1098699087
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

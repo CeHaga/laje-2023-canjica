@@ -5,7 +5,8 @@ public class Menu : MonoBehaviour
 {
     public void LoadGame()
     {
-        SceneManager.LoadScene(1);    /*Carregando a primeira fase*/
+        Transicao_Fases transicao = new Transicao_Fases();
+        transicao.carregarProximaCena();    /*Carregando a primeira fase*/
     }
 
     public void QuitGame()

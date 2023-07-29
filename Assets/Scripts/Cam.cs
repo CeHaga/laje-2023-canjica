@@ -31,7 +31,7 @@ public class Cam : MonoBehaviour
             else if (numInimigosDerrotados < 8)
                 posicaoFinalX = 27.5f - distanciaInicialPersonagem;
             else
-                posicaoFinalX = 40 - distanciaInicialPersonagem;
+                posicaoFinalX = 40.2f - distanciaInicialPersonagem;
 
             if (player.position.x >= posicaoInicialX && player.position.x <= posicaoFinalX)
             {

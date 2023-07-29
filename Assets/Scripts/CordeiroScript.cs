@@ -20,6 +20,8 @@ public class CordeiroScript : MonoBehaviour
     private Animator animator;
     private SpriteRenderer sr;
 
+    public static bool ativo = true;    /*Esta variável será usada para desativar os controles do personagem em certos pontos do jogo*/
+
     void Awake()
     {
         hitbox1 = GetComponent<BoxCollider2D>();
@@ -31,11 +33,14 @@ public class CordeiroScript : MonoBehaviour
 
     void Update()
     {
-        Move();
-        Jump();
-        Attack();
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-            Cam.numInimigosDerrotados++;
+        if (ativo)
+        {
+            Move();
+            Jump();
+            Attack();
+            if (Input.GetKeyDown(KeyCode.LeftControl))
+                Cam.numInimigosDerrotados++;
+        }
     }
 
     void Move()
@@ -121,7 +126,8 @@ public class CordeiroScript : MonoBehaviour
         if (colisao.gameObject.tag == "ProxFase")      /*Verificando se o personagem encostou no trigger que o leva para a próxima fase*/
         {
             Debug.Log("Passou de fase");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            Transicao_Fases transicao = new Transicao_Fases();
+            //transicao.carregarProximaCena();      /*Chamando a função de carregar a próxima cena*/
         }
     }
 
