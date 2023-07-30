@@ -3,37 +3,58 @@ using UnityEngine;
 
 public class Inimigo : MonoBehaviour
 {
-
-    public GameObject vidaVerde, vidaVermelha;
     //public Animator animator;
     public SpriteRenderer cor;
     public BoxCollider2D hitbox;
-    public CapsuleCollider2D visãoInimigo;
+    public CapsuleCollider2D visaoInimigo;
     public CordeiroScript cordeiro;
 
-    public bool ataqueEmAndamento = false, visão = false, hitboxRange = false, olhandoEsquerda = false, ataquePlayer = false;
-    public int danoPercentual = 0, vida = 1, dano = 10;
+    public bool ataqueEmAndamento = false, visao = false, hitboxRange = false, olhandoEsquerda = false, ataquePlayer = false;
+    public int danoPercentual = 0, vida = 100, dano = 10;
     private float corPercentual = 1;
 
     void Update()
     {
 
-        if (vida <= 0) /*Reduz a escala do GameObject á 0 quando a vida chega a zero*/
+        if(vida <= 0) /*Reduz a escala do GameObject á 0 quando a vida chega a zero*/
         {
-            transform.localScale = new Vector3(transform.localScale.x - 0.28f, transform.localScale.y - 0.28f, transform.localScale.z - 0.28f);
+            if(transform.localScale.x >= 0)
+            {   
+                transform.localScale = new Vector3(transform.localScale.x - 0.015f, transform.localScale.y , transform.localScale.z);
+            }
+            if(transform.localScale.y >= 0)
+            {   
+                transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y - 0.01f, transform.localScale.z);
+            }
+            if(transform.localScale.z >= 0)
+            {   
+                transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z - 0.01f);
+            }
+
+            if(transform.localScale.x <= 0 && transform.localScale.y <= 0 && transform.localScale.z <= 0)
+                Destroy(gameObject);
 
         }
+        else
+        {
 
         if (!ataqueEmAndamento && hitboxRange == true)
             StartCoroutine(Attack());
 
-        if (visão == true)
+        if (visao == true)
             perseguir();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "AtaquePlayer" && ataquePlayer)
+        if (other.tag == "AtaquePlayer" && ataquePlayer == true)
+            recebeDano();
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.tag == "AtaquePlayer" && ataquePlayer == true)
             recebeDano();
     }
 
@@ -56,23 +77,21 @@ public class Inimigo : MonoBehaviour
 
     IEnumerator Attack()
     {
-
-        //animator.SetBool("Ataque", true);
+;
 
         yield return new WaitForSeconds(0.2f); /* Aguardar até a animação do hit efetivamente aconteça.*/
 
-        //if (animator.GetBool("Ataque"))
-        //{
-        //    ataqueEmAndamento = true;
-        //    hitbox.enabled = true;
-        //}
+        if(vida > 0)
+        {
+            ataqueEmAndamento = true;
+            hitbox.enabled = true;
+        }
 
-        yield return new WaitForSeconds(0.18f); /* Aguardar até a animação do hit efetivamente aconteça.*/
+        yield return new WaitForSeconds(1f); /* Aguardar até a animação do hit efetivamente aconteça.*/
 
         hitbox.enabled = false;
-        //animator.SetBool("Ataque", false);
 
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.5f);
 
         ataqueEmAndamento = false;
     }
@@ -86,7 +105,7 @@ public class Inimigo : MonoBehaviour
                 transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
                 olhandoEsquerda = false;
             }
-            transform.position = new Vector2(transform.position.x + 0.2f * Time.deltaTime, transform.position.y);
+            transform.position = new Vector2(transform.position.x + 1.0f * Time.deltaTime, transform.position.y);
         }
         else if (cordeiro.transform.position.x < transform.position.x)
         {
@@ -95,7 +114,7 @@ public class Inimigo : MonoBehaviour
                 transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
                 olhandoEsquerda = true;
             }
-            transform.position = new Vector2(transform.position.x - 0.2f * Time.deltaTime, transform.position.y);
+            transform.position = new Vector2(transform.position.x - 1.0f * Time.deltaTime, transform.position.y);
         }
     }
 

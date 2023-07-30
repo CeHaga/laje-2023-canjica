@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CordeiroScript : MonoBehaviour
+public class CordeiroScriptBoss : MonoBehaviour
 {
     public int dano = 5;
     private float vida = 100, danoPercentual = 0, timerPulo, velocidadeAtual;
@@ -52,66 +52,10 @@ public class CordeiroScript : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log(other.tag);
-        if (other.tag == "HitboxRange")
-        {
-            inimigo.hitboxRange = true;
-            inimigo.visao = false;
-            Debug.Log("Tomei dano ai");
-        }
-
-        if (other.tag == "VisaoInimigo" && !ataqueEmAndamento)
-        {
-            inimigo.visao = true;
-        }
-
-        if (other.gameObject.tag == "ProxFase") /*Verificando se o personagem encostou no trigger que o leva para a pr�xima fase*/
-        {
-            Debug.Log("Passou de fase");
-            Transicao_Fases.transicao = true; /*Chamando a fun��o de carregar a pr�xima cena*/
-        }
-
-        if (other.tag == "AtaqueInimigo" && hurtbox.enabled)
-        {
-            StartCoroutine(recebeDano());
-        }
-
-        if (other.tag == "Inimigo")
-        {
-            inimigo.ataquePlayer = true;
-        }
-    }
-
-     void OnTriggerStay2D(Collider2D other)
-    {
-
-        if (other.tag == "Inimigo")
-            inimigo.ataquePlayer = true;
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.tag == "VisaoInimigo" && !ataqueEmAndamento)
-            inimigo.visao = false;
-
-        if (other.tag == "HitboxRange")
-        {
-            inimigo.hitboxRange = false;
-            inimigo.visao = true;
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D colisao)
-    {
-        if (colisao.gameObject.tag == "Ground") /*Verificando se o personagem est� em contato com algum gameObject com a tag "Ground"*/
-        {
-            isPulando = false;
-            animator.SetBool("NoAr", false);
-        }
+   void OnTriggerEnter2D(Collider2D other)
+   {
         
-    }
+   }
 
 
     void Move()

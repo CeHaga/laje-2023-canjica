@@ -7,6 +7,12 @@ TagManager:
   - Ground
   - ProxFase
   - Inimigo
+  - AtaqueInimigo
+  - AtaquePlayer
+  - Hitbox
+  - HitboxRange
+  - VisaoInimigo
+  - GemaDeFogo
   layers:
   - Default
   - TransparentFX
