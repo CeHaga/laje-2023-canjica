@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,7 +121,427 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: CordeiroDesvia_0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 894
+        width: 56
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8a41da2c2dd8f4db702567ba95a66f
+      internalID: -1869070133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 894
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7835c81d2b10edf438b179c7b829b9bb
+      internalID: -75866539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_2
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 894
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fc48a5ad75d874084fe06075fec850
+      internalID: -2116616493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_3
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 894
+        width: 55
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc1fc7bf77cfc54eb90ae9c5e412d50
+      internalID: 1543469507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_4
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 894
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8d7d1f3d755e547a790f293de8f63c
+      internalID: -851891590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 639
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e52ca03a813cf9458cfe51546382561
+      internalID: 373421525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_6
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 639
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36bd5862c7d1dc443988fd1e21685c2b
+      internalID: 930162350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_7
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 640
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224bf91078ad29e49a121a5f296a2273
+      internalID: 1249012194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_8
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 641
+        width: 59
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4657fc57da0e2418e785aa3d1b6b41
+      internalID: -947694680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_9
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 642
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b0b51738032bc4587f42906b512b38
+      internalID: -183460756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_10
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 386
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b5df54b7666c04f951524b76c4cbdd
+      internalID: 1559546898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_11
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 387
+        width: 61
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cff6c1e8e4e1174fab53b617945e1a3
+      internalID: 1620348513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_12
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 387
+        width: 62
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9dfaff213353a34181891b1d956ae1a
+      internalID: 928295522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_13
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 388
+        width: 63
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e135706a60664d4d9a57f2d2c21861d
+      internalID: -1835638471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_14
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 388
+        width: 63
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f562597b7d15b0347b87630452fce9f5
+      internalID: 1122047874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 133
+        width: 63
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce5222af82900f43b5e202bcccccf12
+      internalID: 833593971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_16
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 131
+        width: 63
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1bd8941f7816804bad8cfd9b05bcef1
+      internalID: -1615454735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_17
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 129
+        width: 63
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb28a36e6746de489685b394a6f6ae6
+      internalID: 836651977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_18
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 128
+        width: 63
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1cdf0e646bc7e4c8d18193a2e9f3cf
+      internalID: -271569434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CordeiroDesvia_19
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 127
+        width: 62
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1803f68324773d4ea456e9cf6fac071
+      internalID: 1860706712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +552,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CordeiroDesvia_0: -1869070133
+      CordeiroDesvia_1: -75866539
+      CordeiroDesvia_10: 1559546898
+      CordeiroDesvia_11: 1620348513
+      CordeiroDesvia_12: 928295522
+      CordeiroDesvia_13: -1835638471
+      CordeiroDesvia_14: 1122047874
+      CordeiroDesvia_15: 833593971
+      CordeiroDesvia_16: -1615454735
+      CordeiroDesvia_17: 836651977
+      CordeiroDesvia_18: -271569434
+      CordeiroDesvia_19: 1860706712
+      CordeiroDesvia_2: -2116616493
+      CordeiroDesvia_3: 1543469507
+      CordeiroDesvia_4: -851891590
+      CordeiroDesvia_5: 373421525
+      CordeiroDesvia_6: 930162350
+      CordeiroDesvia_7: 1249012194
+      CordeiroDesvia_8: -947694680
+      CordeiroDesvia_9: -183460756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

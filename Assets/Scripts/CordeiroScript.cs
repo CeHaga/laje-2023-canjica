@@ -1,34 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Scripting.APIUpdating;
-using UnityEngine.SceneManagement;
 
 public class CordeiroScript : MonoBehaviour
 {
-    /*Definindo as constantes do movimento*/
-    private const float VEL_ANDANDO = 1.5f, VEL_CORRENDO = 3, FORCA_PULO = 1;
-    private const float TEMPO_PULO = 0.25f;   /*Este será o tempo que o usuário terá que segurar o botão de pulo para que o personagem atinja sua altura máxima*/
+    public int dano = 5;
+    private float vida = 1000, danoPercentual = 0, timerPulo, velocidadeAtual;
+    private bool olhandoEsquerda = false, ataqueEmAndamento = false, desvioEmAndamento = false, isPulando, releasedJump = true;
+    public BoxCollider2D hitbox, hurtbox;
 
-    /*Variáveis do personagem*/
-    private float velocidadeAtual;
-    private float timerPulo;
-    private bool isPulando, releasedJump=true;
-
-    public BoxCollider2D hitbox1;
-    private Rigidbody2D rig;
     private Animator animator;
+    public Inimigo inimigo;
+    private Rigidbody2D rig;
     private SpriteRenderer sr;
 
-    public static bool ativo = true;    /*Esta variável será usada para desativar os controles do personagem em certos pontos do jogo*/
+    /*Definindo as constantes do movimento*/
+    private const float VEL_ANDANDO = 1.5f, VEL_CORRENDO = 3, FORCA_PULO = 1;
+    private const float TEMPO_PULO = 0.25f; /*Este será o tempo que o usuário terá que segurar o botão de pulo para que o personagem atinja sua altura máxima*/
+
+    public static bool ativo = true; /*Esta variável será usada para desativar os controles do personagem em certos pontos do jogo*/
+
 
     void Awake()
     {
-        hitbox1 = GetComponent<BoxCollider2D>();
         rig = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         timerPulo = TEMPO_PULO;
+
     }
 
     void Update()
@@ -37,19 +36,84 @@ public class CordeiroScript : MonoBehaviour
         {
             Move();
             Jump();
-            Attack();
+
+            if (Input.GetKey(KeyCode.Z) && !ataqueEmAndamento)
+                StartCoroutine(Attack());
+
+            if (Input.GetKey(KeyCode.X) && !desvioEmAndamento)
+                StartCoroutine(desvio());
+
             if (Input.GetKeyDown(KeyCode.LeftControl))
                 Cam.numInimigosDerrotados++;
         }
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log(other.tag);
+        if (other.tag == "HitboxRange")
+        {
+            inimigo.hitboxRange = true;
+            inimigo.visão = false;
+            Debug.Log("Tomei dano ai");
+        }
+
+        if (other.tag == "VisaoInimigo")
+        {
+            inimigo.visão = true;
+        }
+
+        if (other.gameObject.tag == "ProxFase") /*Verificando se o personagem encostou no trigger que o leva para a próxima fase*/
+        {
+            Debug.Log("Passou de fase");
+            Transicao_Fases.transicao = true; /*Chamando a função de carregar a próxima cena*/
+        }
+
+        if (other.tag == "AtaqueInimigo")
+        {
+            StartCoroutine(recebeDano());
+        }
+
+        if (other.tag == "Inimigo")
+        {
+            inimigo.ataquePlayer = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "VisaoInimigo")
+            inimigo.visão = false;
+
+        if (other.tag == "HitboxRange")
+        {
+            inimigo.hitboxRange = false;
+            inimigo.visão = true;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D colisao)
+    {
+        if (colisao.gameObject.tag == "Ground") /*Verificando se o personagem está em contato com algum gameObject com a tag "Ground"*/
+        {
+            isPulando = false;
+            animator.SetBool("NoAr", false);
+        }
+    }
+
+
     void Move()
     {
         /*Fazendo a funcionalidade de andar para a esquerda e direita*/
         float movimento = Input.GetAxis("Horizontal");    /*Se não pressionar nada, o valor é zero. Se for esquerda é -1 e direita é 1*/
+
         if (movimento < 0)
         {
-            sr.flipX = true;    /*Rotacionando o personagem para a esquerda*/
+            if (!olhandoEsquerda)
+            {
+                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);    /*Rotacionando o personagem para a esquerda*/
+                olhandoEsquerda = !olhandoEsquerda;
+            }
 
             velocidadeAtual = VEL_ANDANDO;
             if (Input.GetKey(KeyCode.LeftShift))
@@ -60,7 +124,11 @@ public class CordeiroScript : MonoBehaviour
         }
         else if (movimento > 0)
         {
-            sr.flipX = false;     /*Rotacionando o personagem para a direita*/
+            if (olhandoEsquerda)
+            {
+                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);    /*Rotacionando o personagem para a direita*/
+                olhandoEsquerda = !olhandoEsquerda;
+            }
 
             velocidadeAtual = VEL_ANDANDO;
             if (Input.GetKey(KeyCode.LeftShift))
@@ -70,8 +138,9 @@ public class CordeiroScript : MonoBehaviour
 
         }
         else
+        {
             velocidadeAtual = 0;
-
+        }
         rig.velocity = new Vector2(movimento * velocidadeAtual, rig.velocity.y);     /*Usando o velocity para mover o personagem*/
         animator.SetFloat("Velocidade", velocidadeAtual);
     }
@@ -103,31 +172,70 @@ public class CordeiroScript : MonoBehaviour
         }
     }
 
-    void Attack()
+    IEnumerator Attack()
     {
-        /*Fazendo a funcionalidade de hitbox e vida*/
-        if (Input.GetKey(KeyCode.Z))
-            hitbox1.enabled = true;
-        else
-            hitbox1.enabled = false;
+        animator.SetBool("Ataque", true);
+
+        yield return new WaitForSeconds(0.2f); /* Aguardar até a animação do hit efetivamente aconteça.*/
+
+        if (animator.GetBool("Ataque"))
+        {
+            ataqueEmAndamento = true;
+            hitbox.enabled = true;
+        }
+
+        yield return new WaitForSeconds(0.18f); /* Aguardar até a animação do hit efetivamente aconteça.*/
+
+        hitbox.enabled = false;
+
+        animator.SetBool("Ataque", false);
+        ataqueEmAndamento = false;
     }
 
-    void OnCollisionEnter2D(Collision2D colisao)
+    IEnumerator recebeDano() /*Função chamada ao receber dano*/
     {
-        if (colisao.gameObject.tag == "Ground")       /*Verificando se o personagem está em contato com algum gameObject com a tag "Ground"*/
+        if (danoPercentual == 0)
+            danoPercentual = (inimigo.dano / vida);
+
+        vida -= inimigo.dano;
+
+        if (vida <= 0) /*Verfica se o personagem perdeu toda sua vida*/
         {
-            isPulando = false;
-            animator.SetBool("NoAr", false);
+            vida = 0;
+            animator.SetBool("Vida", false);
         }
+
+        //Mudança de cor ao tomar dano
+
+        sr.color = new Color(0.85f, 0.21f, 0.21f, 1);
+
+        yield return new WaitForSeconds(0.2f);
+
+        sr.color = new Color(1, 1, 1, 1);
+
+        yield return new WaitForSeconds(0.2f);
+
+        sr.color = new Color(0.85f, 0.21f, 0.21f, 1);
+
+        yield return new WaitForSeconds(0.2f);
+
+        sr.color = new Color(1, 1, 1, 1);
+
     }
 
-    private void OnTriggerEnter2D(Collider2D colisao)
+    IEnumerator desvio()
     {
-        if (colisao.gameObject.tag == "ProxFase")      /*Verificando se o personagem encostou no trigger que o leva para a próxima fase*/
-        {
-            Debug.Log("Passou de fase");
-            Transicao_Fases.transicao = true;     /*Chamando a função de carregar a próxima cena*/
-        }
+        animator.SetBool("Desvio", true);
+
+        desvioEmAndamento = true;
+        hurtbox.enabled = false;
+
+        yield return new WaitForSeconds(0.4f);
+
+        hurtbox.enabled = true;
+        desvioEmAndamento = false;
+        animator.SetBool("Desvio", false);
+
     }
 
 }

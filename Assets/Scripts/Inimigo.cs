@@ -1,54 +1,102 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Inimigo : MonoBehaviour
 {
 
-    public GameObject barra_de_vida_verde, barra_de_vida_vermelha;
-    private double vida = 10, danoRecebido = 5;
-    public Animator animator;
+    public GameObject vidaVerde, vidaVermelha;
+    //public Animator animator;
+    public SpriteRenderer cor;
+    public BoxCollider2D hitbox;
+    public CapsuleCollider2D visãoInimigo;
+    public CordeiroScript cordeiro;
 
-    void Awake()
-    {
-        
-    }
+    public bool ataqueEmAndamento = false, visão = false, hitboxRange = false, olhandoEsquerda = false, ataquePlayer = false;
+    public int danoPercentual = 0, vida = 1, dano = 10;
+    private float corPercentual = 1;
 
     void Update()
     {
 
-        if(vida <= 0) /*Reduz a escala do GameObject á 0 quando a vida chega a zero*/
+        if (vida <= 0) /*Reduz a escala do GameObject á 0 quando a vida chega a zero*/
         {
-            if(transform.localScale.x >= 0)
-            {   
-                transform.localScale = new Vector3(transform.localScale.x - (float)0.28, transform.localScale.y , transform.localScale.z);
-            }
-            if(transform.localScale.y >= 0)
-            {   
-                transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y - (float)0.28, transform.localScale.z);
-            }
-            if(transform.localScale.z >= 0)
-            {   
-                transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z - (float)0.28);
-            }
+            transform.localScale = new Vector3(transform.localScale.x - 0.28f, transform.localScale.y - 0.28f, transform.localScale.z - 0.28f);
+
         }
+
+        if (!ataqueEmAndamento && hitboxRange == true)
+            StartCoroutine(Attack());
+
+        if (visão == true)
+            perseguir();
     }
 
-    void OnTriggerEnter2D(Collider2D collision) /*Tratamento de eventos do tipo Trigger com colisões*/
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Acertou!");
-        recebeDano();
+        if (other.tag == "AtaquePlayer" && ataquePlayer)
+            recebeDano();
     }
 
-    void recebeDano() /*Função chamada ao receber dano*/
+    public void recebeDano()    /*Função chamada ao receber dano*/
     {
-        vida -= danoRecebido;
-        if(vida <= 0) /*Verfica se o personagem perdeu toda sua vida*/
+        if (danoPercentual == 0)
+            danoPercentual = (cordeiro.dano / vida);
+
+        corPercentual -= danoPercentual;
+
+        cor.color = new Color(0, 1, 0.12f, corPercentual);
+        vida -= cordeiro.dano;
+
+        if (vida <= 0) /*Verfica se o personagem perdeu toda sua vida*/
         {
             vida = 0;
-            animator.SetBool("Vida", false);
+            Debug.Log("inimigo mrreu");
         }
-
-        barra_de_vida_verde.transform.localScale = new Vector3((float)vida / 10, barra_de_vida_verde.transform.localScale.y, barra_de_vida_verde.transform.localScale.z); /*Diminui a barra de vida verde*/
     }
+
+    IEnumerator Attack()
+    {
+
+        //animator.SetBool("Ataque", true);
+
+        yield return new WaitForSeconds(0.2f); /* Aguardar até a animação do hit efetivamente aconteça.*/
+
+        //if (animator.GetBool("Ataque"))
+        //{
+        //    ataqueEmAndamento = true;
+        //    hitbox.enabled = true;
+        //}
+
+        yield return new WaitForSeconds(0.18f); /* Aguardar até a animação do hit efetivamente aconteça.*/
+
+        hitbox.enabled = false;
+        //animator.SetBool("Ataque", false);
+
+        yield return new WaitForSeconds(0.8f);
+
+        ataqueEmAndamento = false;
+    }
+
+    void perseguir()
+    {
+        if (cordeiro.transform.position.x > transform.position.x)
+        {
+            if (olhandoEsquerda)
+            {
+                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+                olhandoEsquerda = false;
+            }
+            transform.position = new Vector2(transform.position.x + 0.2f * Time.deltaTime, transform.position.y);
+        }
+        else if (cordeiro.transform.position.x < transform.position.x)
+        {
+            if (!olhandoEsquerda)
+            {
+                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+                olhandoEsquerda = true;
+            }
+            transform.position = new Vector2(transform.position.x - 0.2f * Time.deltaTime, transform.position.y);
+        }
+    }
+
 }
