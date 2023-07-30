@@ -13,25 +13,38 @@ public class GameController : MonoBehaviour
 
     private bool isPausado = false, isMorto = false, acabouMostrarTelaGameOver = false;
 
+
     private void Update()
     {
-        if (isMorto && !acabouMostrarTelaGameOver)
-            acabouMostrarTelaGameOver = mostrarTelaGameover();
-
-        if (Input.GetKeyDown(KeyCode.Escape) && !isMorto)
-            isPausado = !isPausado;
-        telaPause.SetActive(isPausado);    /*Ativando ou desativando a tela de Pause*/
-
-        if (Input.GetKeyDown(KeyCode.S) && !isMorto)
+        if (SceneManager.GetActiveScene().name.Contains("Fase"))   /*Se for uma fase normal*/
         {
-            isMorto = true;
-            telaGameOver.SetActive(true);
+            if (isMorto && !acabouMostrarTelaGameOver)
+                acabouMostrarTelaGameOver = mostrarTelaGameover();
+
+            if (Input.GetKeyDown(KeyCode.Escape) && !isMorto)
+                isPausado = !isPausado;
+            telaPause.SetActive(isPausado);    /*Ativando ou desativando a tela de Pause*/
+
+            if (Input.GetKeyDown(KeyCode.S) && !isMorto)
+            {
+                isMorto = true;
+                telaGameOver.SetActive(true);
+            }
+
+            if (isPausado)
+                Time.timeScale = 0;    /*Parando todos os processos do jogo*/
+            else
+                Time.timeScale = 1;    /*Reiniciando todos os processos do jogo*/
         }
 
-        if (isPausado)
-            Time.timeScale = 0;    /*Parando todos os processos do jogo*/
-        else
-            Time.timeScale = 1;    /*Reiniciando todos os processos do jogo*/
+
+        if (Input.anyKeyDown)
+        {
+            if (SceneManager.GetActiveScene().name.Contains("Texto"))
+                Transicao_Fases.transicao = true;    /*Carregando a próxima fase*/
+            else if (SceneManager.GetActiveScene().name.Contains("Final"))
+                QuitGame();    /*Saindo do jogo depois da tela final*/
+        }
     }
 
     public bool mostrarTelaGameover()     /*Esta função faz com que a tela de Game Over apareça com um efeito de fade in*/
@@ -66,7 +79,7 @@ public class GameController : MonoBehaviour
     /*Funcionalidades de botões*/
     public void ReturnToMenu()
     {
-        SceneManager.LoadScene(0);    /*Carregando o menu*/
+        SceneManager.LoadScene("Menu");    /*Carregando o menu*/
         Time.timeScale = 1;
         isMorto = false;
     }
@@ -75,5 +88,20 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);      /*Carregando novamente a fase na qual o jogador se encontra*/
         Time.timeScale = 1;
         isMorto = false;
+    }
+
+    public void LoadGame()
+    {
+        Transicao_Fases.transicao = true;    /*Carregando a próxima fase*/
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();    /*Saindo do jogo*/
+    }
+
+    public void Configuracoes()
+    {
+        SceneManager.LoadScene("Configuracoes");
     }
 }

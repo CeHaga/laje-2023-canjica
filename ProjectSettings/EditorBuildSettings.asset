@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TelaFinal.unity
     guid: b8b80541a79790143869eaaeff9746c7
+  - enabled: 1
+    path: Assets/Scenes/Configuracoes.unity
+    guid: 540830c73059ea64a984cb401807a821
   m_configObjects: {}

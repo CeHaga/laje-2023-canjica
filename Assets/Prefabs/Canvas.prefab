@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1524275854744470760}
   m_Layer: 5
   m_Name: TelaPause
-  m_TagString: Untagged
+  m_TagString: TelaPause
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 1066668846230085110}
   m_Layer: 5
   m_Name: TelaGameOver
-  m_TagString: Untagged
+  m_TagString: TelaGameover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
