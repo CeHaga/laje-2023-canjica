@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CordeiroScript : MonoBehaviour
+public class CordeiroScriptBoss : MonoBehaviour
 {
     public int dano = 5;
     private float vida = 100, danoPercentual = 0, timerPulo, velocidadeAtual;

@@ -8,6 +8,7 @@ public class Boss_3 : MonoBehaviour
     private float tempoMinimoEntreAtaques=3.5f, tempoMaximoEntreAtaques = 10f;
     private bool isParado = false, podeAtacarNovamente=true;
     private int cont = 0;
+    public GameObject Espinho1, Espinho2, Espinho3, Espinho4;
 
     void Start()
     {
@@ -62,7 +63,11 @@ public class Boss_3 : MonoBehaviour
         else
             podeAtacarNovamente = true;
         
-        //-9, 7.31
+        
+        Espinho1.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
+        Espinho2.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
+        Espinho3.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
+        Espinho4.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
     }
 
     private void terminarAtaque()
