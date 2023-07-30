@@ -10,6 +10,8 @@ public class Menus : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name.Contains("Texto"))
                 Transicao_Fases.transicao = true;    /*Carregando a próxima fase*/
+            else if (SceneManager.GetActiveScene().name.Contains("Final"))
+                QuitGame();    /*Saindo do jogo depois da tela final*/
         }
     }
     public void LoadGame()
