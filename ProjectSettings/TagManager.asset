@@ -12,6 +12,7 @@ TagManager:
   - Hitbox
   - HitboxRange
   - VisaoInimigo
+  - GemaDeFogo
   layers:
   - Default
   - TransparentFX

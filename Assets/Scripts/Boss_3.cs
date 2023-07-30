@@ -61,6 +61,8 @@ public class Boss_3 : MonoBehaviour
         }
         else
             podeAtacarNovamente = true;
+        
+        //-9, 7.31
     }
 
     private void terminarAtaque()
@@ -83,6 +85,6 @@ public class Boss_3 : MonoBehaviour
     {
         Debug.Log("Morte acabou!");
         Destroy(gameObject);
-        GameObject.FindGameObjectWithTag("ProxFase").SetActive(true);     /*"Spawnando o objeto que fará o jogador zerar o jogo"*/
+        GameObject.FindGameObjectWithTag("ProxFase").SetActive(true);     /*"Spawnando o objeto que farï¿½ o jogador zerar o jogo"*/
     }
 }

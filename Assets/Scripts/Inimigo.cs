@@ -10,7 +10,7 @@ public class Inimigo : MonoBehaviour
     public CordeiroScript cordeiro;
 
     public bool ataqueEmAndamento = false, visao = false, hitboxRange = false, olhandoEsquerda = false, ataquePlayer = false;
-    public int danoPercentual = 0, vida = 1, dano = 10;
+    public int danoPercentual = 0, vida = 100, dano = 10;
     private float corPercentual = 1;
 
     void Update()
@@ -87,11 +87,11 @@ public class Inimigo : MonoBehaviour
             hitbox.enabled = true;
         }
 
-        yield return new WaitForSeconds(0.18f); /* Aguardar até a animação do hit efetivamente aconteça.*/
+        yield return new WaitForSeconds(1f); /* Aguardar até a animação do hit efetivamente aconteça.*/
 
         hitbox.enabled = false;
 
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.5f);
 
         ataqueEmAndamento = false;
     }
