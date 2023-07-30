@@ -2723,13 +2723,14 @@ MonoBehaviour:
   danoPercentual: 0
   escalaPercentual: 0
   transformPercentual: 0
+  vida: 36
   dano: 10
   Espinho1: {fileID: 1715623438}
-  Espinho2: {fileID: 0}
-  Espinho3: {fileID: 0}
-  Espinho4: {fileID: 0}
-  Espinho5: {fileID: 0}
-  Espinho6: {fileID: 0}
+  Espinho2: {fileID: 1725464697}
+  Espinho3: {fileID: 119960211}
+  Espinho4: {fileID: 1880064243}
+  Espinho5: {fileID: 889073000}
+  Espinho6: {fileID: 1186260339}
   cor: {fileID: 1560795097}
   cordeiro: {fileID: 1513187073}
   somDano: {fileID: 833320377}

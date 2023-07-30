@@ -5,8 +5,9 @@ public class Boss_3 : MonoBehaviour
 {
     public Animator anim;
 
-    private float tempoMinimoEntreAtaques=3.5f, tempoMaximoEntreAtaques = 10f, vida = 36;
+    private float tempoMinimoEntreAtaques=1.5f, tempoMaximoEntreAtaques = 5.5f;
     public double danoPercentual = 0, escalaPercentual = 0, transformPercentual = 0;
+    public float  vida = 36;
     private bool isParado = false, podeAtacarNovamente=true;
     private int cont = 0;
     public int dano = 10;
@@ -137,7 +138,7 @@ public class Boss_3 : MonoBehaviour
         if (vida <= 0) /*Verfica se o personagem perdeu toda sua vida*/
         {
             vida = 0;
-            cor.transform.position = new Vector2(0, cor.transform.position.y);
+            cor.transform.localScale = new Vector3(0, 0, 0);
             anim.SetBool("morte", true);
             Debug.Log("inimigo mrreu");
         }

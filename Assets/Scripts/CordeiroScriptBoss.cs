@@ -68,7 +68,7 @@ public class CordeiroScriptBoss : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Foguinho" && !desvioEmAndamento)
+        if(other.tag == "Foguinho" && !desvioEmAndamento && inimigo.vida > 0)
             StartCoroutine(recebeDano(5));
     }
 

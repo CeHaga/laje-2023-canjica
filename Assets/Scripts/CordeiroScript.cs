@@ -7,7 +7,7 @@ public class CordeiroScript : MonoBehaviour
     public int dano = 5;
     private float vida = 100, danoPercentual = 0, timerPulo, velocidadeAtual;
     private bool olhandoEsquerda = false, ataqueEmAndamento = false, desvioEmAndamento = false, isPulando, releasedJump = true;
-    public BoxCollider2D hitbox, hurtbox, rigidbox;
+    public BoxCollider2D hitbox, rigidbox;
 
     private Animator animator;
     public Inimigo inimigo;
@@ -39,7 +39,7 @@ public class CordeiroScript : MonoBehaviour
             Move();
             Jump();
 
-            if (Input.GetKey(KeyCode.Z) && !ataqueEmAndamento)
+            if (Input.GetKey(KeyCode.Z) && !ataqueEmAndamento && !desvioEmAndamento)
                 StartCoroutine(Attack());
 
             if (Input.GetKey(KeyCode.X) && !desvioEmAndamento)
@@ -47,7 +47,7 @@ public class CordeiroScript : MonoBehaviour
         }
         else
         {
-            rigidbox.size = new Vector2(hurtbox.size.x, hurtbox.size.y - 0.6f);
+            rigidbox.size = new Vector2(rigidbox.size.x, rigidbox.size.y - 0.6f);
         }
     }
 
@@ -72,7 +72,7 @@ public class CordeiroScript : MonoBehaviour
             Transicao_Fases.transicao = true; /*Chamando a fun��o de carregar a pr�xima cena*/
         }
 
-        if (other.tag == "AtaqueInimigo" && hurtbox.enabled)
+        if (other.tag == "AtaqueInimigo" && !desvioEmAndamento)
         {
             StartCoroutine(recebeDano());
         }
@@ -249,21 +249,25 @@ public class CordeiroScript : MonoBehaviour
         animator.SetBool("Desvio", true);
 
         desvioEmAndamento = true;
-        hurtbox.enabled = false;
 
-        rigidbox.size = new Vector2(hurtbox.size.x, hurtbox.size.y - 0.3f);
+        rigidbox.size = new Vector2(rigidbox.size.x, rigidbox.size.y - 0.3f);
 
-        if(!olhandoEsquerda)
-            rig.velocity = new Vector2(1 * 70f, rig.velocity.y);
-        else
-            rig.velocity = new Vector2(-1 * 70f, rig.velocity.y);     /*Usando o velocity para mover o personagem*/
+        for(int i = 0; i < 20; i++)
+        {   
+            if(!olhandoEsquerda)
+                transform.position = new Vector3(transform.position.x + 0.1f, transform.position.y);
+            
+            if(olhandoEsquerda)
+                transform.position = new Vector3(transform.position.x - 0.1f, transform.position.y);
 
-        yield return new WaitForSeconds(0.8f);     /*Usando o velocity para mover o personagem*/
+            yield return new WaitForSeconds(0.01f);
+        }
 
-        rigidbox.size = new Vector2(hurtbox.size.x, hurtbox.size.y);
+        yield return new WaitForSeconds(0.4f);     /*Usando o velocity para mover o personagem*/
+
+        rigidbox.size = new Vector2(rigidbox.size.x, rigidbox.size.y + 0.3f);
 
 
-        hurtbox.enabled = true;
         desvioEmAndamento = false;
         animator.SetBool("Desvio", false);
 
