@@ -19,13 +19,14 @@ public class GlobalController : MonoBehaviour
     public void Start()
     {
         //Adds a listener to the main slider and invokes a method when the value changes.
-        mainSlider.onValueChanged.AddListener(delegate { ValueChangeCheck(); });
+        if(mainSlider != null)
+            mainSlider.onValueChanged.AddListener(delegate { ValueChangeCheck(); });
     }
 
     // Invoked when the value of the slider changes.
     public void ValueChangeCheck()
     {
-        Debug.Log(mainSlider.value);
+        volume = mainSlider.value;
         audioo.SetFloat("volume", mainSlider.value);
     }
 

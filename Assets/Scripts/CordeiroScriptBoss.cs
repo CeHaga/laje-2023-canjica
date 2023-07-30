@@ -1,11 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CordeiroScriptBoss : MonoBehaviour
 {
     public float dano = 7;
-    private float vida = 100, danoPercentual = 0, timerPulo, velocidadeAtual;
+    private float vida = 100, timerPulo, velocidadeAtual;
     private bool olhandoEsquerda = false, ataqueEmAndamento = false, desvioEmAndamento = false, isPulando, releasedJump = true;
     public BoxCollider2D hitbox, hurtbox, rigidbox;
 
@@ -19,6 +18,8 @@ public class CordeiroScriptBoss : MonoBehaviour
     private const float TEMPO_PULO = 0.25f; /*Este ser� o tempo que o usu�rio ter� que segurar o bot�o de pulo para que o personagem atinja sua altura m�xima*/
 
     public bool ativo = true; /*Esta vari�vel ser� usada para desativar os controles do personagem em certos pontos do jogo*/
+
+    public AudioSource somAtaque, somPasso, somDano;
 
 
     void Awake()
@@ -167,13 +168,13 @@ public class CordeiroScriptBoss : MonoBehaviour
         Debug.Log(vida);
 
         vida -= dano;
+        tocarSomDano();
 
         if (vida <= 0) /*Verfica se o personagem perdeu toda sua vida*/
         {
             vida = 0;
             ativo = false;
             animator.SetBool("Vida", false);
-
             yield return new WaitForSeconds(0.2f);
         }
 
@@ -215,6 +216,19 @@ public class CordeiroScriptBoss : MonoBehaviour
         desvioEmAndamento = false;
         animator.SetBool("Desvio", false);
 
+    }
+
+    public void tocarSomPassos()
+    {
+        somPasso.Play();
+    }
+    public void tocarSomDano()
+    {
+        somDano.Play();
+    }
+    public void tocarSomAtaque()
+    {
+        somAtaque.Play();
     }
 
 }

@@ -20,7 +20,7 @@ public class CordeiroScript : MonoBehaviour
 
     public static bool ativo = true; /*Esta vari�vel ser� usada para desativar os controles do personagem em certos pontos do jogo*/
 
-    public AudioSource somAtaque, somPasso, somDano;
+    public AudioSource somAtaque, somPasso, somDano, somChifreColetavel;
 
 
     void Awake()
@@ -44,9 +44,6 @@ public class CordeiroScript : MonoBehaviour
 
             if (Input.GetKey(KeyCode.X) && !desvioEmAndamento)
                 StartCoroutine(Desvio());
-
-            if (Input.GetKeyDown(KeyCode.LeftControl))
-                Cam.numInimigosDerrotados++;
         }
         else
         {
@@ -83,6 +80,12 @@ public class CordeiroScript : MonoBehaviour
         if (other.tag == "Inimigo")
         {
             inimigo.ataquePlayer = true;
+        }
+
+        if (other.tag == "Chifre")
+        {
+            tocarSomChifreColetavel();
+            Destroy(other);
         }
     }
 
@@ -218,6 +221,7 @@ public class CordeiroScript : MonoBehaviour
             vida = 0;
             ativo = false;
             animator.SetBool("Vida", false);
+            tocarSomDano();
 
             yield return new WaitForSeconds(0.2f);
         }
@@ -277,5 +281,8 @@ public class CordeiroScript : MonoBehaviour
     {
         somAtaque.Play();
     }
-
+    public void tocarSomChifreColetavel()
+    {
+        somChifreColetavel.Play();
+    }
 }

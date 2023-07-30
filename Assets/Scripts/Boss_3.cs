@@ -15,6 +15,8 @@ public class Boss_3 : MonoBehaviour
     
     public CordeiroScriptBoss cordeiro;
 
+    public AudioSource somDano, somNascendo;
+
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
@@ -36,7 +38,6 @@ public class Boss_3 : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.C))
             {
-                anim.SetBool("dano", true);
                 cont++;
                 isParado = false;
             }
@@ -129,6 +130,9 @@ public class Boss_3 : MonoBehaviour
         cor.transform.position = new Vector2(cor.transform.position.x + (float)transformPercentual, cor.transform.position.y);
 
         vida -= cordeiro.dano;
+        anim.SetBool("dano", true);
+        isParado = false;
+        tocarSomDano();
 
         if (vida <= 0) /*Verfica se o personagem perdeu toda sua vida*/
         {
@@ -137,5 +141,10 @@ public class Boss_3 : MonoBehaviour
             anim.SetBool("morte", true);
             Debug.Log("inimigo mrreu");
         }
+    }
+
+    public void tocarSomDano()
+    {
+        somDano.Play();
     }
 }

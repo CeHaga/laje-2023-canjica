@@ -10,7 +10,7 @@ public class Inimigo : MonoBehaviour
     public CordeiroScript cordeiro;
 
     public bool ataqueEmAndamento = false, visao = false, hitboxRange = false, olhandoEsquerda = false, ataquePlayer = false;
-    public int danoPercentual = 0, vida = 100, dano = 10;
+    public int danoPercentual = 0, vida = 100, dano = 1;
     private float corPercentual = 1;
 
     void Update()
@@ -31,8 +31,11 @@ public class Inimigo : MonoBehaviour
                 transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z - 0.01f);
             }
 
-            if(transform.localScale.x <= 0 && transform.localScale.y <= 0 && transform.localScale.z <= 0)
+            if (transform.localScale.x <= 0 && transform.localScale.y <= 0 && transform.localScale.z <= 0)
+            {
                 Destroy(gameObject);
+                Cam.numInimigosDerrotados+=4;
+            }
 
         }
         else
