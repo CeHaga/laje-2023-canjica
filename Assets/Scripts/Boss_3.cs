@@ -5,10 +5,15 @@ public class Boss_3 : MonoBehaviour
 {
     public Animator anim;
 
-    private float tempoMinimoEntreAtaques=3.5f, tempoMaximoEntreAtaques = 10f;
+    private float tempoMinimoEntreAtaques=3.5f, tempoMaximoEntreAtaques = 10f, vida = 36;
+    public double danoPercentual = 0, escalaPercentual = 0, transformPercentual = 0;
     private bool isParado = false, podeAtacarNovamente=true;
     private int cont = 0;
-    public GameObject Espinho1, Espinho2, Espinho3, Espinho4;
+    public int dano = 10;
+    public GameObject Espinho1, Espinho2, Espinho3, Espinho4, Espinho5, Espinho6;
+    public SpriteRenderer cor;
+    
+    public CordeiroScriptBoss cordeiro;
 
     void Start()
     {
@@ -18,7 +23,7 @@ public class Boss_3 : MonoBehaviour
 
     void Update()
     {
-        if (isParado && CordeiroScript.ativo)
+        if (isParado && cordeiro.ativo)
         {
             if (podeAtacarNovamente)
             {
@@ -43,11 +48,19 @@ public class Boss_3 : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+   {
+        if(other.tag == "AtaquePlayer")
+        {
+            recebeDano();
+        }
+   }
+
     private IEnumerator comecar()
     {
-        CordeiroScript.ativo = false;  /*Destaivando os controles do personagem*/
+        cordeiro.ativo = false;  /*Destaivando os controles do personagem*/
         yield return new WaitForSeconds(7);
-        CordeiroScript.ativo = true;  /*Reativando os controles do personagem*/
+        cordeiro.ativo = true;  /*Reativando os controles do personagem*/
         isParado = true;
     }
 
@@ -63,11 +76,20 @@ public class Boss_3 : MonoBehaviour
         else
             podeAtacarNovamente = true;
         
-        
+
         Espinho1.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
+        Espinho1.SetActive(true);        
         Espinho2.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
+        Espinho2.SetActive(true);  
         Espinho3.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
+        Espinho3.SetActive(true);       
         Espinho4.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
+        Espinho4.SetActive(true);
+        Espinho5.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
+        Espinho5.SetActive(true);       
+        Espinho6.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
+        Espinho6.SetActive(true);
+
     }
 
     private void terminarAtaque()
@@ -91,5 +113,29 @@ public class Boss_3 : MonoBehaviour
         Debug.Log("Morte acabou!");
         Destroy(gameObject);
         GameObject.FindGameObjectWithTag("ProxFase").SetActive(true);     /*"Spawnando o objeto que far� o jogador zerar o jogo"*/
+    }
+
+    void recebeDano()    /*Função chamada ao receber dano*/
+    {
+        if(danoPercentual == 0)
+            danoPercentual = cordeiro.dano/vida;
+        if(escalaPercentual == 0)
+            escalaPercentual = cor.transform.localScale.x * danoPercentual;
+        if(transformPercentual == 0)
+            transformPercentual = cor.transform.position.x * (danoPercentual * 10);
+
+
+        cor.transform.localScale = new Vector3(cor.transform.localScale.x - (float)escalaPercentual, cor.transform.localScale.y);
+        cor.transform.position = new Vector2(cor.transform.position.x + (float)transformPercentual, cor.transform.position.y);
+
+        vida -= cordeiro.dano;
+
+        if (vida <= 0) /*Verfica se o personagem perdeu toda sua vida*/
+        {
+            vida = 0;
+            cor.transform.position = new Vector2(0, cor.transform.position.y);
+            anim.SetBool("morte", true);
+            Debug.Log("inimigo mrreu");
+        }
     }
 }

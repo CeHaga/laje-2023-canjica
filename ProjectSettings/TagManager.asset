@@ -13,6 +13,7 @@ TagManager:
   - HitboxRange
   - VisaoInimigo
   - GemaDeFogo
+  - Foguinho
   layers:
   - Default
   - TransparentFX

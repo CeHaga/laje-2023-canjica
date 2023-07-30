@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class CordeiroScriptBoss : MonoBehaviour
 {
-    public int dano = 5;
+    public float dano = 7;
     private float vida = 100, danoPercentual = 0, timerPulo, velocidadeAtual;
     private bool olhandoEsquerda = false, ataqueEmAndamento = false, desvioEmAndamento = false, isPulando, releasedJump = true;
     public BoxCollider2D hitbox, hurtbox, rigidbox;
 
     private Animator animator;
-    public Inimigo inimigo;
+    public Boss_3 inimigo;
     private Rigidbody2D rig;
     private SpriteRenderer sr;
 
@@ -18,7 +18,7 @@ public class CordeiroScriptBoss : MonoBehaviour
     private const float VEL_ANDANDO = 1.5f, VEL_CORRENDO = 3, FORCA_PULO = 1;
     private const float TEMPO_PULO = 0.25f; /*Este ser� o tempo que o usu�rio ter� que segurar o bot�o de pulo para que o personagem atinja sua altura m�xima*/
 
-    public static bool ativo = true; /*Esta vari�vel ser� usada para desativar os controles do personagem em certos pontos do jogo*/
+    public bool ativo = true; /*Esta vari�vel ser� usada para desativar os controles do personagem em certos pontos do jogo*/
 
 
     void Awake()
@@ -46,16 +46,30 @@ public class CordeiroScriptBoss : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.LeftControl))
                 Cam.numInimigosDerrotados++;
         }
-        else
+        else if(vida <= 0)
         {
             rigidbox.size = new Vector2(hurtbox.size.x, hurtbox.size.y - 0.6f);
         }
     }
 
-   void OnTriggerEnter2D(Collider2D other)
-   {
+   private void OnCollisionEnter2D(Collision2D colisao)
+    {
+        if (colisao.gameObject.tag == "Ground") /*Verificando se o personagem est� em contato com algum gameObject com a tag "Ground"*/
+        {
+            isPulando = false;
+            animator.SetBool("NoAr", false);
+        }
+
+        if(colisao.gameObject.tag == "Inimigo")
+            StartCoroutine(recebeDano(inimigo.dano));
         
-   }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Foguinho" && !desvioEmAndamento)
+            StartCoroutine(recebeDano(5));
+    }
 
 
     void Move()
@@ -148,12 +162,11 @@ public class CordeiroScriptBoss : MonoBehaviour
         ataqueEmAndamento = false;
     }
 
-    IEnumerator recebeDano() /*Fun��o chamada ao receber dano*/
-    {
-        if (danoPercentual == 0)
-            danoPercentual = (inimigo.dano / vida);
+    IEnumerator recebeDano(int dano) /*Fun��o chamada ao receber dano*/
+    {   
+        Debug.Log(vida);
 
-        vida -= inimigo.dano;
+        vida -= dano;
 
         if (vida <= 0) /*Verfica se o personagem perdeu toda sua vida*/
         {
@@ -187,7 +200,6 @@ public class CordeiroScriptBoss : MonoBehaviour
         animator.SetBool("Desvio", true);
 
         desvioEmAndamento = true;
-        hurtbox.enabled = false;
 
         rigidbox.size = new Vector2(hurtbox.size.x, hurtbox.size.y - 0.3f);
 
@@ -198,10 +210,8 @@ public class CordeiroScriptBoss : MonoBehaviour
 
         yield return new WaitForSeconds(0.8f);     /*Usando o velocity para mover o personagem*/
 
-        rigidbox.size = new Vector2(hurtbox.size.x, hurtbox.size.y);
+        rigidbox.size = new Vector2(hurtbox.size.x, hurtbox.size.y + 0.3f);
 
-
-        hurtbox.enabled = true;
         desvioEmAndamento = false;
         animator.SetBool("Desvio", false);
 
