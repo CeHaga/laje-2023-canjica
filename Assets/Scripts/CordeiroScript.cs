@@ -5,9 +5,9 @@ using UnityEngine;
 public class CordeiroScript : MonoBehaviour
 {
     public int dano = 5;
-    private float vida = 1000, danoPercentual = 0, timerPulo, velocidadeAtual;
+    private float vida = 1, danoPercentual = 0, timerPulo, velocidadeAtual;
     private bool olhandoEsquerda = false, ataqueEmAndamento = false, desvioEmAndamento = false, isPulando, releasedJump = true;
-    public BoxCollider2D hitbox, hurtbox;
+    public BoxCollider2D hitbox, hurtbox, rigidbox;
 
     private Animator animator;
     public Inimigo inimigo;
@@ -16,9 +16,9 @@ public class CordeiroScript : MonoBehaviour
 
     /*Definindo as constantes do movimento*/
     private const float VEL_ANDANDO = 1.5f, VEL_CORRENDO = 3, FORCA_PULO = 1;
-    private const float TEMPO_PULO = 0.25f; /*Este será o tempo que o usuário terá que segurar o botão de pulo para que o personagem atinja sua altura máxima*/
+    private const float TEMPO_PULO = 0.25f; /*Este serï¿½ o tempo que o usuï¿½rio terï¿½ que segurar o botï¿½o de pulo para que o personagem atinja sua altura mï¿½xima*/
 
-    public static bool ativo = true; /*Esta variável será usada para desativar os controles do personagem em certos pontos do jogo*/
+    public static bool ativo = true; /*Esta variï¿½vel serï¿½ usada para desativar os controles do personagem em certos pontos do jogo*/
 
 
     void Awake()
@@ -41,10 +41,14 @@ public class CordeiroScript : MonoBehaviour
                 StartCoroutine(Attack());
 
             if (Input.GetKey(KeyCode.X) && !desvioEmAndamento)
-                StartCoroutine(desvio());
+                StartCoroutine(Desvio());
 
             if (Input.GetKeyDown(KeyCode.LeftControl))
                 Cam.numInimigosDerrotados++;
+        }
+        else
+        {
+            rigidbox.size = new Vector2(hurtbox.size.x, hurtbox.size.y - 0.6f);
         }
     }
 
@@ -54,22 +58,22 @@ public class CordeiroScript : MonoBehaviour
         if (other.tag == "HitboxRange")
         {
             inimigo.hitboxRange = true;
-            inimigo.visão = false;
+            inimigo.visao = false;
             Debug.Log("Tomei dano ai");
         }
 
-        if (other.tag == "VisaoInimigo")
+        if (other.tag == "VisaoInimigo" && !ataqueEmAndamento)
         {
-            inimigo.visão = true;
+            inimigo.visao = true;
         }
 
-        if (other.gameObject.tag == "ProxFase") /*Verificando se o personagem encostou no trigger que o leva para a próxima fase*/
+        if (other.gameObject.tag == "ProxFase") /*Verificando se o personagem encostou no trigger que o leva para a prï¿½xima fase*/
         {
             Debug.Log("Passou de fase");
-            Transicao_Fases.transicao = true; /*Chamando a função de carregar a próxima cena*/
+            Transicao_Fases.transicao = true; /*Chamando a funï¿½ï¿½o de carregar a prï¿½xima cena*/
         }
 
-        if (other.tag == "AtaqueInimigo")
+        if (other.tag == "AtaqueInimigo" && hurtbox.enabled)
         {
             StartCoroutine(recebeDano());
         }
@@ -80,32 +84,40 @@ public class CordeiroScript : MonoBehaviour
         }
     }
 
+     void OnTriggerStay2D(Collider2D other)
+    {
+
+        if (other.tag == "Inimigo")
+            inimigo.ataquePlayer = true;
+    }
+
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "VisaoInimigo")
-            inimigo.visão = false;
+        if (other.tag == "VisaoInimigo" && !ataqueEmAndamento)
+            inimigo.visao = false;
 
         if (other.tag == "HitboxRange")
         {
             inimigo.hitboxRange = false;
-            inimigo.visão = true;
+            inimigo.visao = true;
         }
     }
 
     private void OnCollisionEnter2D(Collision2D colisao)
     {
-        if (colisao.gameObject.tag == "Ground") /*Verificando se o personagem está em contato com algum gameObject com a tag "Ground"*/
+        if (colisao.gameObject.tag == "Ground") /*Verificando se o personagem estï¿½ em contato com algum gameObject com a tag "Ground"*/
         {
             isPulando = false;
             animator.SetBool("NoAr", false);
         }
+        
     }
 
 
     void Move()
     {
         /*Fazendo a funcionalidade de andar para a esquerda e direita*/
-        float movimento = Input.GetAxis("Horizontal");    /*Se não pressionar nada, o valor é zero. Se for esquerda é -1 e direita é 1*/
+        float movimento = Input.GetAxis("Horizontal");    /*Se nï¿½o pressionar nada, o valor ï¿½ zero. Se for esquerda ï¿½ -1 e direita ï¿½ 1*/
 
         if (movimento < 0)
         {
@@ -148,23 +160,23 @@ public class CordeiroScript : MonoBehaviour
     void Jump()
     {
         /*Fazendo a funcionalidade do pulo*/
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))      /*Detectando se foi apertado o botão de pulo (no nosso caso será o W ou seta para cima)*/
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))      /*Detectando se foi apertado o botï¿½o de pulo (no nosso caso serï¿½ o W ou seta para cima)*/
         {
-            if (timerPulo > 0)                /*Fazendo o sistema de pular mais alto se segurar o botão de pulo por um tempo*/
+            if (timerPulo > 0)                /*Fazendo o sistema de pular mais alto se segurar o botï¿½o de pulo por um tempo*/
                 timerPulo -= Time.deltaTime;
             else
                 rig.gravityScale = 1;
 
-            if (!isPulando && releasedJump)            /*Se estiver no chão e o botão de pulo não estiver sendo segurado*/
+            if (!isPulando && releasedJump)            /*Se estiver no chï¿½o e o botï¿½o de pulo nï¿½o estiver sendo segurado*/
             {
                 rig.gravityScale = 0;
-                rig.AddForce(new Vector2(0, FORCA_PULO), ForceMode2D.Impulse);    /*Adicionando força ao rigidbody para fazer o personagem pular*/
+                rig.AddForce(new Vector2(0, FORCA_PULO), ForceMode2D.Impulse);    /*Adicionando forï¿½a ao rigidbody para fazer o personagem pular*/
                 animator.SetBool("NoAr", true);
                 isPulando = true;
             }
             releasedJump = false;
         }
-        if ((Input.GetKeyUp(KeyCode.W) && !Input.GetKey(KeyCode.UpArrow)) || (Input.GetKeyUp(KeyCode.UpArrow) && !Input.GetKey(KeyCode.W)))     /*Quando soltar o botão de pulo*/
+        if ((Input.GetKeyUp(KeyCode.W) && !Input.GetKey(KeyCode.UpArrow)) || (Input.GetKeyUp(KeyCode.UpArrow) && !Input.GetKey(KeyCode.W)))     /*Quando soltar o botï¿½o de pulo*/
         {
             timerPulo = TEMPO_PULO;
             rig.gravityScale = 1;
@@ -176,7 +188,7 @@ public class CordeiroScript : MonoBehaviour
     {
         animator.SetBool("Ataque", true);
 
-        yield return new WaitForSeconds(0.2f); /* Aguardar até a animação do hit efetivamente aconteça.*/
+        yield return new WaitForSeconds(0.2f); /* Aguardar atï¿½ a animaï¿½ï¿½o do hit efetivamente aconteï¿½a.*/
 
         if (animator.GetBool("Ataque"))
         {
@@ -184,7 +196,7 @@ public class CordeiroScript : MonoBehaviour
             hitbox.enabled = true;
         }
 
-        yield return new WaitForSeconds(0.18f); /* Aguardar até a animação do hit efetivamente aconteça.*/
+        yield return new WaitForSeconds(0.18f); /* Aguardar atï¿½ a animaï¿½ï¿½o do hit efetivamente aconteï¿½a.*/
 
         hitbox.enabled = false;
 
@@ -192,7 +204,7 @@ public class CordeiroScript : MonoBehaviour
         ataqueEmAndamento = false;
     }
 
-    IEnumerator recebeDano() /*Função chamada ao receber dano*/
+    IEnumerator recebeDano() /*Funï¿½ï¿½o chamada ao receber dano*/
     {
         if (danoPercentual == 0)
             danoPercentual = (inimigo.dano / vida);
@@ -202,10 +214,13 @@ public class CordeiroScript : MonoBehaviour
         if (vida <= 0) /*Verfica se o personagem perdeu toda sua vida*/
         {
             vida = 0;
+            ativo = false;
             animator.SetBool("Vida", false);
+
+            yield return new WaitForSeconds(0.2f);
         }
 
-        //Mudança de cor ao tomar dano
+        //Mudanï¿½a de cor ao tomar dano
 
         sr.color = new Color(0.85f, 0.21f, 0.21f, 1);
 
@@ -223,14 +238,24 @@ public class CordeiroScript : MonoBehaviour
 
     }
 
-    IEnumerator desvio()
+    IEnumerator Desvio()
     {
         animator.SetBool("Desvio", true);
 
         desvioEmAndamento = true;
         hurtbox.enabled = false;
 
-        yield return new WaitForSeconds(0.4f);
+        rigidbox.size = new Vector2(hurtbox.size.x, hurtbox.size.y - 0.3f);
+
+        if(!olhandoEsquerda)
+            rig.velocity = new Vector2(1 * 70f, rig.velocity.y);
+        else
+            rig.velocity = new Vector2(-1 * 70f, rig.velocity.y);     /*Usando o velocity para mover o personagem*/
+
+        yield return new WaitForSeconds(0.8f);     /*Usando o velocity para mover o personagem*/
+
+        rigidbox.size = new Vector2(hurtbox.size.x, hurtbox.size.y);
+
 
         hurtbox.enabled = true;
         desvioEmAndamento = false;
