@@ -20,6 +20,8 @@ public class CordeiroScript : MonoBehaviour
 
     public static bool ativo = true; /*Esta vari�vel ser� usada para desativar os controles do personagem em certos pontos do jogo*/
 
+    public AudioSource somAtaque, somPasso, somDano;
+
 
     void Awake()
     {
@@ -261,6 +263,19 @@ public class CordeiroScript : MonoBehaviour
         desvioEmAndamento = false;
         animator.SetBool("Desvio", false);
 
+    }
+
+    public void tocarSomPassos()
+    {
+        somPasso.Play();
+    }
+    public void tocarSomDano()
+    {
+        somDano.Play();
+    }
+    public void tocarSomAtaque()
+    {
+        somAtaque.Play();
     }
 
 }

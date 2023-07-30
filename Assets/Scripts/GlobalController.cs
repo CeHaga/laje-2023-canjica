@@ -1,15 +1,12 @@
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using UnityEngine.Audio;
 
 public class GlobalController : MonoBehaviour
 {
 
     public static string dificuldade;
-    public static float volume;
+    public float volume;
 
     public Slider mainSlider;
     public AudioMixer audioo;
