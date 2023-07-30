@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,6 +10,13 @@ public class GameController : MonoBehaviour
 
     private bool isPausado = false, isMorto = false, acabouMostrarTelaGameOver = false;
 
+    public AudioSource somTocha;
+
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().name.Contains("Calabouco") || SceneManager.GetActiveScene().name.Contains("Corredor"))
+            somTocha.Play();
+    }
 
     private void Update()
     {

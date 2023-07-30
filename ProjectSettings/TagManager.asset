@@ -17,6 +17,7 @@ TagManager:
   - TelaPause
   - TelaGameover
   - Chifre
+  - Tocha
   layers:
   - Default
   - TransparentFX
