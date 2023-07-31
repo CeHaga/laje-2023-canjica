@@ -23,7 +23,7 @@ public class Boss_3 : MonoBehaviour
 
     void Start()
     {
-        AudioController.GetInstance().StopAudio();
+        //AudioController.GetInstance().StopAudio();
         anim = gameObject.GetComponent<Animator>();
         StartCoroutine(comecar());
         StartCoroutine(comecarMusica());
