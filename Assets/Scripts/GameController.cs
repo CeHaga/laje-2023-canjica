@@ -11,14 +11,16 @@ public class GameController : MonoBehaviour
 
     private bool isPausado = false, isMorto = false, acabouMostrarTelaGameOver = false;
 
-    public AudioSource somTocha, musicaGameOver, somBotao;
+    public AudioSource somTocha, musicaGameOver, somBotao, somMenu;
 
     public static bool morreu = false;
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name.Contains("Calabouco") || SceneManager.GetActiveScene().name.Contains("Corredor"))
+        if (SceneManager.GetActiveScene().name.Contains("Corredor"))
             somTocha.Play();
+        else if (SceneManager.GetActiveScene().name.Contains("Menu"))
+            somMenu.Play();
     }
 
     private void Update()
@@ -96,8 +98,8 @@ public class GameController : MonoBehaviour
     IEnumerator ReturnToMenuAtrasado()
     {
         yield return new WaitForSeconds(0.5f);
-        if (SceneManager.GetActiveScene().name.Contains("Boss"))
-            AudioController.GetInstance().PlayAudio();
+        if (!SceneManager.GetActiveScene().name.Contains("Boss"))
+            AudioController.GetInstance().StopAudio();
         SceneManager.LoadScene("Menu");    /*Carregando o menu*/
         if (musicaGameOver != null)
             musicaGameOver.Stop();

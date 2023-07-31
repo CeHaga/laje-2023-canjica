@@ -10,6 +10,7 @@ public class CordeiroAcordando : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         StartCoroutine(comecarAnimacao());
+        AudioController.GetInstance().PlayAudio();
     }
 
     private void sentarNaCama()

@@ -19,7 +19,7 @@ public class CordeiroScriptBoss : MonoBehaviour
 
     public bool ativo = true; /*Esta vari�vel ser� usada para desativar os controles do personagem em certos pontos do jogo*/
 
-    public AudioSource somAtaque, somPasso, somDano, somChifre;
+    public AudioSource somAtaque, somPasso, somDano, somChifre, somPorta;
     public float danoPercentual=0, escalaPercentual=0, transformPercentual=0;
     public RectTransform barraVerde;
 
@@ -40,7 +40,7 @@ public class CordeiroScriptBoss : MonoBehaviour
             Move();
             Jump();
 
-            if (Input.GetKey(KeyCode.Z) && !ataqueEmAndamento)
+            if (Input.GetKey(KeyCode.Q) && !ataqueEmAndamento)
                 StartCoroutine(Attack());
 
             if (Input.GetKey(KeyCode.X) && !desvioEmAndamento)
@@ -73,14 +73,20 @@ public class CordeiroScriptBoss : MonoBehaviour
             StartCoroutine(recebeDano(5));
         if (other.gameObject.tag == "ProxFase") /*Verificando se o personagem encostou no trigger que o leva para a pr�xima fase*/
         {
-            Debug.Log("Passou de fase");
-            Transicao_Fases.transicao = true; /*Chamando a fun��o de carregar a pr�xima cena*/
+            tocarSomPorta();
+            StartCoroutine(passarDeFaseAtrasado());
         }
         if (other.gameObject.tag == "Chifre") /*Verificando se o personagem encostou no trigger que o leva para a pr�xima fase*/
         {
             tocarSomChifreColetavel();
             Destroy(other.gameObject);
         }
+    }
+
+    IEnumerator passarDeFaseAtrasado()
+    {
+        yield return new WaitForSeconds(1);
+        Transicao_Fases.transicao = true; /*Chamando a fun��o de carregar a pr�xima cena*/
     }
 
     void Move()
@@ -247,5 +253,8 @@ public class CordeiroScriptBoss : MonoBehaviour
     {
         somChifre.Play();
     }
-
+    public void tocarSomPorta()
+    {
+        somPorta.Play();
+    }
 }

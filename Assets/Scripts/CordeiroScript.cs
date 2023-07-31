@@ -21,7 +21,7 @@ public class CordeiroScript : MonoBehaviour
 
     public static bool ativo = true; /*Esta vari�vel ser� usada para desativar os controles do personagem em certos pontos do jogo*/
 
-    public AudioSource somAtaque, somPasso, somDano, somChifreColetavel;
+    public AudioSource somAtaque, somPasso, somDano, somChifreColetavel, somPorta;
     public RectTransform barraVerde;
 
     public int cont = 1;
@@ -43,16 +43,16 @@ public class CordeiroScript : MonoBehaviour
             Move();
             Jump();
 
-            if (Input.GetKey(KeyCode.Z) && !ataqueEmAndamento && !desvioEmAndamento)
+            if (Input.GetKey(KeyCode.Q) && !ataqueEmAndamento && !desvioEmAndamento)
                 StartCoroutine(Attack());
 
             if (Input.GetKey(KeyCode.X) && !desvioEmAndamento)
                 StartCoroutine(Desvio());
         }
         else
-        {
             rigidbox.size = new Vector2(rigidbox.size.x, rigidbox.size.y - 0.6f);
-        }
+
+        StartCoroutine(verificaBugs());
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -64,31 +64,30 @@ public class CordeiroScript : MonoBehaviour
         }
 
         if (other.tag == "VisaoInimigo" && !ataqueEmAndamento)
-        {
             inimigo.visao = true;
-        }
 
         if (other.gameObject.tag == "ProxFase") /*Verificando se o personagem encostou no trigger que o leva para a pr�xima fase*/
         {
-            Debug.Log("Passou de fase");
-            Transicao_Fases.transicao = true; /*Chamando a fun��o de carregar a pr�xima cena*/
+            tocarSomPorta();
+            StartCoroutine(passarDeFaseAtrasado());
         }
 
         if (other.tag == "AtaqueInimigo" && !desvioEmAndamento)
-        {
             StartCoroutine(recebeDano());
-        }
 
         if (other.tag == "Inimigo" || other.tag == "Inimigo2" || other.tag == "Inimigo3" || other.tag == "Inimigo4")
-        {
             inimigo.ataquePlayer = true;
-        }
 
         if (other.tag == "Chifre")
         {
             tocarSomChifreColetavel();
             Destroy(other.gameObject);
         }
+    }
+    IEnumerator passarDeFaseAtrasado()
+    {
+        yield return new WaitForSeconds(1);
+        Transicao_Fases.transicao = true; /*Chamando a fun��o de carregar a pr�xima cena*/
     }
 
      void OnTriggerStay2D(Collider2D other)
@@ -209,6 +208,26 @@ public class CordeiroScript : MonoBehaviour
         ataqueEmAndamento = false;
     }
 
+    IEnumerator verificaBugs()
+    {
+        int teste = 0;
+        if (animator.GetBool("Ataque"))
+            teste++;
+        yield return new WaitForSeconds(2);
+        if (animator.GetBool("Ataque"))
+            teste++;
+
+        if (teste == 2)
+        {
+            animator.SetBool("Ataque", false);
+            if(GameObject.FindGameObjectWithTag("AtaquePlayer") != null)
+                GameObject.FindGameObjectWithTag("AtaquePlayer").SetActive(false);
+            ataqueEmAndamento = false;
+            inimigo.ataquePlayer = true;
+            hitbox.gameObject.SetActive(true);
+        }
+    }
+
     IEnumerator recebeDano() /*Fun��o chamada ao receber dano*/
     {
         tocarSomDano();
@@ -290,5 +309,9 @@ public class CordeiroScript : MonoBehaviour
     public void tocarSomChifreColetavel()
     {
         somChifreColetavel.Play();
+    }
+    public void tocarSomPorta()
+    {
+        somPorta.Play();
     }
 }
