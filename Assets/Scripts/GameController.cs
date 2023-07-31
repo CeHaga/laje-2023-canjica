@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,7 +11,9 @@ public class GameController : MonoBehaviour
 
     private bool isPausado = false, isMorto = false, acabouMostrarTelaGameOver = false;
 
-    public AudioSource somTocha;
+    public AudioSource somTocha, musicaGameOver, somBotao;
+
+    public static bool morreu = false;
 
     private void Start()
     {
@@ -29,7 +32,8 @@ public class GameController : MonoBehaviour
                 isPausado = !isPausado;
             telaPause.SetActive(isPausado);    /*Ativando ou desativando a tela de Pause*/
 
-            if (Input.GetKeyDown(KeyCode.S) && !isMorto)
+            //if (Input.GetKeyDown(KeyCode.S) && !isMorto)
+            if ((morreu && !isMorto) || Input.GetKey(KeyCode.Alpha9))
             {
                 isMorto = true;
                 telaGameOver.SetActive(true);
@@ -46,7 +50,7 @@ public class GameController : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().name.Contains("Texto"))
                 Transicao_Fases.transicao = true;    /*Carregando a próxima fase*/
-            else if (SceneManager.GetActiveScene().name.Contains("Final"))
+            else if (SceneManager.GetActiveScene().name.Contains("Fim"))
                 QuitGame();    /*Saindo do jogo depois da tela final*/
         }
     }
@@ -75,7 +79,10 @@ public class GameController : MonoBehaviour
             }
         }
         if (cont == objetosFilhos.Length)
+        {
+            musicaGameOver.Play();
             return true;
+        }
 
         return false;
     }
@@ -83,29 +90,72 @@ public class GameController : MonoBehaviour
     /*Funcionalidades de botões*/
     public void ReturnToMenu()
     {
+        tocarSomBotao();
+        StartCoroutine(ReturnToMenuAtrasado());
+    }
+    IEnumerator ReturnToMenuAtrasado()
+    {
+        yield return new WaitForSeconds(0.5f);
+        if (SceneManager.GetActiveScene().name.Contains("Boss"))
+            AudioController.GetInstance().PlayAudio();
         SceneManager.LoadScene("Menu");    /*Carregando o menu*/
+        if (musicaGameOver != null)
+            musicaGameOver.Stop();
         Time.timeScale = 1;
         isMorto = false;
+        morreu = false;
     }
     public void RestartLevel()
     {
+        tocarSomBotao();
+        StartCoroutine(RestartLevelAtrasado());
+    }
+    IEnumerator RestartLevelAtrasado()
+    {
+        yield return new WaitForSeconds(0.5f);
+        CordeiroScript.ativo = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);      /*Carregando novamente a fase na qual o jogador se encontra*/
+        musicaGameOver.Stop();
         Time.timeScale = 1;
         isMorto = false;
+        morreu = false;
     }
 
     public void LoadGame()
     {
+        tocarSomBotao();
+        StartCoroutine(LoadGameAtrasado());
+    }
+    IEnumerator LoadGameAtrasado()
+    {
+        yield return new WaitForSeconds(0.5f);
         Transicao_Fases.transicao = true;    /*Carregando a próxima fase*/
     }
 
     public void QuitGame()
     {
+        tocarSomBotao();
+        StartCoroutine(QuitGameAtrasado());
+    }
+    IEnumerator QuitGameAtrasado()
+    {
+        yield return new WaitForSeconds(0.5f);
         Application.Quit();    /*Saindo do jogo*/
     }
 
     public void Configuracoes()
     {
+        tocarSomBotao();
+        StartCoroutine(ConfiguracoesAtrasado());
+    }
+    IEnumerator ConfiguracoesAtrasado()
+    {
+        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene("Configuracoes");
+    }
+
+    public void tocarSomBotao()
+    {
+        somBotao.Play();
     }
 }

@@ -18,6 +18,10 @@ TagManager:
   - TelaGameover
   - Chifre
   - Tocha
+  - Musica
+  - Inimigo2
+  - Inimigo3
+  - Inimigo4
   layers:
   - Default
   - TransparentFX

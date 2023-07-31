@@ -26,9 +26,9 @@ public class Cam : MonoBehaviour
         if(isCorredor)     /*A movimentação da câmera só vai ocorrer no corredor*/
         {
             /*os valores a seguir irão mudar de acordo com o tamanho da fase e da posição das paredes invisíveis*/
-            if (numInimigosDerrotados < 4)
+            if (numInimigosDerrotados < 2)
                 posicaoFinalX = 9.2f - distanciaInicialPersonagem;
-            else if (numInimigosDerrotados < 8)
+            else if (numInimigosDerrotados < 4)
                 posicaoFinalX = 27.5f - distanciaInicialPersonagem;
             else
                 posicaoFinalX = 40.2f - distanciaInicialPersonagem;
@@ -40,12 +40,12 @@ public class Cam : MonoBehaviour
             }
 
             /*Destruindo as paredes invisíveis*/
-            if (numInimigosDerrotados == 4 && !paredeInvisivel1Destruida)
+            if (numInimigosDerrotados == 2 && !paredeInvisivel1Destruida)
             {
                 Destroy(paredeInvisivel1);
                 paredeInvisivel1Destruida = true;
             }
-            if (numInimigosDerrotados == 8 && !paredeInvisivel2Destruida)
+            if (numInimigosDerrotados == 4 && !paredeInvisivel2Destruida)
             {
                 Destroy(paredeInvisivel2);
                 paredeInvisivel2Destruida = true;

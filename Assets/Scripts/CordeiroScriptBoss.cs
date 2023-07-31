@@ -19,7 +19,9 @@ public class CordeiroScriptBoss : MonoBehaviour
 
     public bool ativo = true; /*Esta vari�vel ser� usada para desativar os controles do personagem em certos pontos do jogo*/
 
-    public AudioSource somAtaque, somPasso, somDano;
+    public AudioSource somAtaque, somPasso, somDano, somChifre;
+    public float danoPercentual=0, escalaPercentual=0, transformPercentual=0;
+    public RectTransform barraVerde;
 
 
     void Awake()
@@ -63,15 +65,23 @@ public class CordeiroScriptBoss : MonoBehaviour
 
         if(colisao.gameObject.tag == "Inimigo")
             StartCoroutine(recebeDano(inimigo.dano));
-        
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Foguinho" && !desvioEmAndamento && inimigo.vida > 0)
+        if (other.tag == "Foguinho" && !desvioEmAndamento && inimigo.vida > 0)
             StartCoroutine(recebeDano(5));
+        if (other.gameObject.tag == "ProxFase") /*Verificando se o personagem encostou no trigger que o leva para a pr�xima fase*/
+        {
+            Debug.Log("Passou de fase");
+            Transicao_Fases.transicao = true; /*Chamando a fun��o de carregar a pr�xima cena*/
+        }
+        if (other.gameObject.tag == "Chifre") /*Verificando se o personagem encostou no trigger que o leva para a pr�xima fase*/
+        {
+            tocarSomChifreColetavel();
+            Destroy(other.gameObject);
+        }
     }
-
 
     void Move()
     {
@@ -164,8 +174,18 @@ public class CordeiroScriptBoss : MonoBehaviour
     }
 
     IEnumerator recebeDano(int dano) /*Fun��o chamada ao receber dano*/
-    {   
+    {
         Debug.Log(vida);
+        tocarSomDano();
+        if (danoPercentual == 0)
+            danoPercentual = (inimigo.dano / vida);
+        if (escalaPercentual == 0)
+            escalaPercentual = barraVerde.localScale.x * danoPercentual;
+        if (transformPercentual == 0)
+            transformPercentual = barraVerde.position.x * danoPercentual;
+
+        barraVerde.localScale = new Vector3(barraVerde.localScale.x - (float)escalaPercentual, barraVerde.localScale.y);
+        barraVerde.position = new Vector2(barraVerde.position.x - (float)transformPercentual, barraVerde.position.y);
 
         vida -= dano;
         tocarSomDano();
@@ -175,25 +195,18 @@ public class CordeiroScriptBoss : MonoBehaviour
             vida = 0;
             ativo = false;
             animator.SetBool("Vida", false);
+            GameController.morreu = true;
             yield return new WaitForSeconds(0.2f);
         }
 
         //Mudan�a de cor ao tomar dano
-
         sr.color = new Color(0.85f, 0.21f, 0.21f, 1);
-
         yield return new WaitForSeconds(0.2f);
-
         sr.color = new Color(1, 1, 1, 1);
-
         yield return new WaitForSeconds(0.2f);
-
         sr.color = new Color(0.85f, 0.21f, 0.21f, 1);
-
         yield return new WaitForSeconds(0.2f);
-
         sr.color = new Color(1, 1, 1, 1);
-
     }
 
     IEnumerator Desvio()
@@ -229,6 +242,10 @@ public class CordeiroScriptBoss : MonoBehaviour
     public void tocarSomAtaque()
     {
         somAtaque.Play();
+    }
+    public void tocarSomChifreColetavel()
+    {
+        somChifre.Play();
     }
 
 }

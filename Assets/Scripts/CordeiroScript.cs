@@ -1,11 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CordeiroScript : MonoBehaviour
 {
-    public int dano = 5;
-    private float vida = 100, danoPercentual = 0, timerPulo, velocidadeAtual;
+    public float dano = 1.6f;
+    private float vida = 100, danoPercentual = 0, transformPercentual=0, escalaPercentual=0, timerPulo, velocidadeAtual;
     private bool olhandoEsquerda = false, ataqueEmAndamento = false, desvioEmAndamento = false, isPulando, releasedJump = true;
     public BoxCollider2D hitbox, rigidbox;
 
@@ -21,6 +22,9 @@ public class CordeiroScript : MonoBehaviour
     public static bool ativo = true; /*Esta vari�vel ser� usada para desativar os controles do personagem em certos pontos do jogo*/
 
     public AudioSource somAtaque, somPasso, somDano, somChifreColetavel;
+    public RectTransform barraVerde;
+
+    public int cont = 1;
 
 
     void Awake()
@@ -53,12 +57,10 @@ public class CordeiroScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.tag);
         if (other.tag == "HitboxRange")
         {
             inimigo.hitboxRange = true;
             inimigo.visao = false;
-            Debug.Log("Tomei dano ai");
         }
 
         if (other.tag == "VisaoInimigo" && !ataqueEmAndamento)
@@ -77,7 +79,7 @@ public class CordeiroScript : MonoBehaviour
             StartCoroutine(recebeDano());
         }
 
-        if (other.tag == "Inimigo")
+        if (other.tag == "Inimigo" || other.tag == "Inimigo2" || other.tag == "Inimigo3" || other.tag == "Inimigo4")
         {
             inimigo.ataquePlayer = true;
         }
@@ -85,7 +87,7 @@ public class CordeiroScript : MonoBehaviour
         if (other.tag == "Chifre")
         {
             tocarSomChifreColetavel();
-            Destroy(other);
+            Destroy(other.gameObject);
         }
     }
 
@@ -117,7 +119,6 @@ public class CordeiroScript : MonoBehaviour
         }
         
     }
-
 
     void Move()
     {
@@ -202,17 +203,24 @@ public class CordeiroScript : MonoBehaviour
         }
 
         yield return new WaitForSeconds(0.18f); /* Aguardar at� a anima��o do hit efetivamente aconte�a.*/
+        animator.SetBool("Ataque", false);
 
         hitbox.enabled = false;
-
-        animator.SetBool("Ataque", false);
         ataqueEmAndamento = false;
     }
 
     IEnumerator recebeDano() /*Fun��o chamada ao receber dano*/
     {
+        tocarSomDano();
         if (danoPercentual == 0)
             danoPercentual = (inimigo.dano / vida);
+        if (escalaPercentual == 0)
+            escalaPercentual = barraVerde.localScale.x * danoPercentual;
+        if (transformPercentual == 0)
+            transformPercentual = barraVerde.position.x * danoPercentual;
+
+        barraVerde.localScale = new Vector3(barraVerde.localScale.x - (float)escalaPercentual, barraVerde.localScale.y);
+        barraVerde.position = new Vector2(barraVerde.position.x - (float)transformPercentual, barraVerde.position.y);
 
         vida -= inimigo.dano;
 
@@ -221,27 +229,21 @@ public class CordeiroScript : MonoBehaviour
             vida = 0;
             ativo = false;
             animator.SetBool("Vida", false);
-            tocarSomDano();
+            GameController.morreu = true;  /*Chamando a tela de game over*/
 
             yield return new WaitForSeconds(0.2f);
         }
 
         //Mudan�a de cor ao tomar dano
-
         sr.color = new Color(0.85f, 0.21f, 0.21f, 1);
-
         yield return new WaitForSeconds(0.2f);
-
         sr.color = new Color(1, 1, 1, 1);
-
         yield return new WaitForSeconds(0.2f);
-
         sr.color = new Color(0.85f, 0.21f, 0.21f, 1);
-
         yield return new WaitForSeconds(0.2f);
-
         sr.color = new Color(1, 1, 1, 1);
-
+        StopAllCoroutines();
+        yield return new WaitForSeconds(1f);
     }
 
     IEnumerator Desvio()

@@ -1,0 +1,1086 @@
+fileFormatVersion: 2
+guid: ed7dd1366ac3b7641a64242550a4fb24
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1406
+        width: 41
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d536ca35a07bbe4eae4ee8b1a0a53dd
+      internalID: 2080423464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1406
+        width: 41
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d61e5198c2ffb41af6327354425f47
+      internalID: 317048428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1406
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8220d495e639ddd44a22c995f6300390
+      internalID: 1686067821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1406
+        width: 81
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1cd7c40255fef4288caddc4c46c4ba
+      internalID: 1305380335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 1406
+        width: 77
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d86d9639a3ee8640bc021618ac70528
+      internalID: -1112687357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 1406
+        width: 71
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7718a0b55955c1a40801d6bb17425efe
+      internalID: -2023769281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1406
+        width: 64
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3f0df9a5784854db7591c32f2e18ef
+      internalID: 1772612637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 1406
+        width: 56
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fbcd639437b7541931380d5065c91c
+      internalID: -684060719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1150
+        width: 49
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84104b9bb3d94ef499c231fbd2e1adf2
+      internalID: 1997662395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1150
+        width: 42
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbb7c2200c666c4397bb082501cf90d
+      internalID: 863188166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1150
+        width: 35
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7fca4cc97eeda438e282da38b28ea0
+      internalID: -1237632687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1150
+        width: 28
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e521a2e4130fd534a9eb0037ecc9c2d7
+      internalID: -1008907245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 1150
+        width: 22
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4156bf640acd64ea8986d8b4b88f08
+      internalID: 1147602796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 1150
+        width: 29
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e666548037fa34fb46c13dde39925a
+      internalID: -1438344896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1150
+        width: 38
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30c655ca62a13847bb9672da0d111e5
+      internalID: 1601844453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 894
+        width: 47
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7501a07685b225c46ac809b371c7223f
+      internalID: 217135594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 894
+        width: 59
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961011c0cbc0e10499dc4271457d9c61
+      internalID: -1233478008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 894
+        width: 69
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d3d124db70c15419400725bfa1d77a
+      internalID: -335040749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 894
+        width: 77
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250481b7c7f02c14eb7f12bab5d4d74f
+      internalID: 90748987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 894
+        width: 40
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4dee3a5b26393408d5926625d28145
+      internalID: 959751738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 894
+        width: 39
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f320ee5a5a1fce43bdb4e0682ad4afd
+      internalID: 2062457657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1415
+        y: 894
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9653f36d1f6e0654186b559087d6fd29
+      internalID: -736516951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 894
+        width: 40
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be85b23ac3c94e3428a028a4fc57221f
+      internalID: -1428895234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 894
+        width: 40
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4de79bc245bc73438536e2a6e4da4aa
+      internalID: 610183236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 638
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ffb3c298236ffd4496166dc025556c7
+      internalID: -1771564517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 638
+        width: 71
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640c2b3c504a1b8489d34dc53f12c998
+      internalID: -2078958504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 638
+        width: 61
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6906212906efe428e4537494ee5066
+      internalID: 123512088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 638
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c15259d99b3804aa02cf1b417660a9
+      internalID: 828947882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 638
+        width: 41
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d935c695f53e24b8ebef3b95c8775d
+      internalID: 335987743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 638
+        width: 31
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29bfaebf3545204f80b07e44282ec1d
+      internalID: -1252559398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 638
+        width: 24
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b26dab026584ec4b84984c3da8a200c
+      internalID: -1600705846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 382
+        width: 25
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a8d8fd9841358e46aaa0b3c0a190407
+      internalID: 745351735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 382
+        width: 31
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5daa7715e73cd0a45b3d367547e968f5
+      internalID: 1547404074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 382
+        width: 37
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7619246c44e004f8acb76086918528
+      internalID: 1991420973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 382
+        width: 42
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7a71a03e2c9584c8c5d1725d65a781
+      internalID: -864910462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 382
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837b1a6ffd7ec6a4090549a2ca3eed59
+      internalID: -433127453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 382
+        width: 58
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c416c66ec53254fbbcda363f14c907
+      internalID: 1941028014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1634
+        y: 382
+        width: 66
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e62e5550e2fd84a83c97e21ffb1b36
+      internalID: 1239605182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 126
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c65c55787d61244b895aebc35f5996
+      internalID: 644071268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 126
+        width: 77
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7b60b84b4eeda4a924dde9720458eb
+      internalID: -1634942521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 126
+        width: 39
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb68452507e565443af67a560d24b580
+      internalID: 263236516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 126
+        width: 39
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b181a60fc10645e4d947af3c53dd9ba8
+      internalID: -888120441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big horn spin-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 126
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe996b850f0fd4f48869b36a99799461
+      internalID: 2034048298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Big horn spin-Sheet_0: 2080423464
+      Big horn spin-Sheet_1: 317048428
+      Big horn spin-Sheet_10: -1237632687
+      Big horn spin-Sheet_11: -1008907245
+      Big horn spin-Sheet_12: 1147602796
+      Big horn spin-Sheet_13: -1438344896
+      Big horn spin-Sheet_14: 1601844453
+      Big horn spin-Sheet_15: 217135594
+      Big horn spin-Sheet_16: -1233478008
+      Big horn spin-Sheet_17: -335040749
+      Big horn spin-Sheet_18: 90748987
+      Big horn spin-Sheet_19: 959751738
+      Big horn spin-Sheet_2: 1686067821
+      Big horn spin-Sheet_20: 2062457657
+      Big horn spin-Sheet_21: -736516951
+      Big horn spin-Sheet_22: -1428895234
+      Big horn spin-Sheet_23: 610183236
+      Big horn spin-Sheet_24: -1771564517
+      Big horn spin-Sheet_25: -2078958504
+      Big horn spin-Sheet_26: 123512088
+      Big horn spin-Sheet_27: 828947882
+      Big horn spin-Sheet_28: 335987743
+      Big horn spin-Sheet_29: -1252559398
+      Big horn spin-Sheet_3: 1305380335
+      Big horn spin-Sheet_30: -1600705846
+      Big horn spin-Sheet_31: 745351735
+      Big horn spin-Sheet_32: 1547404074
+      Big horn spin-Sheet_33: 1991420973
+      Big horn spin-Sheet_34: -864910462
+      Big horn spin-Sheet_35: -433127453
+      Big horn spin-Sheet_36: 1941028014
+      Big horn spin-Sheet_37: 1239605182
+      Big horn spin-Sheet_38: 644071268
+      Big horn spin-Sheet_39: -1634942521
+      Big horn spin-Sheet_4: -1112687357
+      Big horn spin-Sheet_40: 263236516
+      Big horn spin-Sheet_41: -888120441
+      Big horn spin-Sheet_42: 2034048298
+      Big horn spin-Sheet_5: -2023769281
+      Big horn spin-Sheet_6: 1772612637
+      Big horn spin-Sheet_7: -684060719
+      Big horn spin-Sheet_8: 1997662395
+      Big horn spin-Sheet_9: 863188166
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

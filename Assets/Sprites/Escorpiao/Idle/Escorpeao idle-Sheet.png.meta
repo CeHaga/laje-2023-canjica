@@ -1,0 +1,1020 @@
+fileFormatVersion: 2
+guid: 377b027f0a6a3374595a2a739b2ac810
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1406
+        width: 97
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d97d2274cee484aad2704bcdd86824
+      internalID: -634690664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1407
+        width: 97
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27cbad93e7c101b46bff18a405d5f789
+      internalID: -362621126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1407
+        width: 97
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd463e4b2b306f40a555a01dddb3cec
+      internalID: 165854499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 1407
+        width: 97
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeee6d3fb96b1c744a22b6aa279faeab
+      internalID: -587867649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 1407
+        width: 98
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c67803a4284cb041901b38356cdb71d
+      internalID: -1024221167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 1408
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5dbf53c1327ac74b8f15da5d40769d6
+      internalID: 1668819700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 1408
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509b5c55eb03d9342ba37116ac63a017
+      internalID: 1834717191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1152
+        width: 98
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4621f46f37c1136468caa7bc854cce13
+      internalID: 599376577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1152
+        width: 98
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5f9a8bc8e345f468741262cc8adb9f
+      internalID: -1010673750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1152
+        width: 98
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d36ff7301faa484b8c400f075d338ee
+      internalID: 947999832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1153
+        width: 98
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bed8501df5471e4a850b5f5a1a201a0
+      internalID: -1561405161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 1153
+        width: 98
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a855975e3f963c040bf1f5fc80e3cc6e
+      internalID: 60769825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 1153
+        width: 98
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e499938d886c66c4f980916cf405e2b2
+      internalID: -249047958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 1153
+        width: 98
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1a30e14f7e39644bbd7f23b548117f
+      internalID: -709202330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 897
+        width: 98
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14224072ad9e6f944b134f2bb03a195d
+      internalID: 458219544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 897
+        width: 98
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65afa5ad25389f46a8e85a3accd6d98
+      internalID: -1561915477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 897
+        width: 98
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526c2c394688e5d40a193109dca39bbd
+      internalID: -1444491360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 897
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932f8f42413bbe84da47fac28c45c725
+      internalID: -1647926376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 897
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07264c77b624f9d4393db0070710579a
+      internalID: -1763308308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 897
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1d6694973cad24a919a955dbe4e42b
+      internalID: -147874186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 897
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e0e6628efdd234c8b5480924f81c66
+      internalID: -1208482401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 641
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f133478f8113ee41b5842568ad7bf83
+      internalID: -1988356370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 641
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622d9942bfcd8464aab32bf2d975cb78
+      internalID: -948660766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 641
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754dc903bd2114d48b5a8905aa61f179
+      internalID: -1709447294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 641
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172b09b15ed4fd84c99a78026604a1d9
+      internalID: -1550239118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 641
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a30e979b608185479fe342dc265023f
+      internalID: 423455100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 641
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6c26770bb8c30428cb2df8d6ae3dde
+      internalID: 1384456790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 641
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131efdcf23eb8c54e98cae6ff77b8773
+      internalID: 1109670150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 385
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ad7612aece5e8499d6105adc394a06
+      internalID: -834074176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 384
+        width: 98
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fccb0b1491ac934f8ce76b6e5648603
+      internalID: 325255958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 384
+        width: 98
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5258f20e04096ae4d8d7315268cc6448
+      internalID: -1926919002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 384
+        width: 98
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7fbb65af4ea674abcb1e58f8fd7115
+      internalID: 1267319864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 384
+        width: 98
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a50dcf3c3c992e4ebd2faa01363f5b8
+      internalID: 554822992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 384
+        width: 98
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35833a939552456478e9174a8847c389
+      internalID: 445763669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 383
+        width: 98
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece603c2344fe29468cbfc1b8686ba38
+      internalID: 754313891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 127
+        width: 98
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f673b5ffda9ad9a4487ca75116cffd05
+      internalID: 1254705515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 127
+        width: 97
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8769d8ed5d5b24bae00b3d7def12d5
+      internalID: -1367701990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 127
+        width: 97
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd9c915a3b12324e90d9437b1a697fc
+      internalID: 1995867569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 127
+        width: 97
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edcc74d0984092040bbc258797014e91
+      internalID: -1483089938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Escorpeao idle-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 127
+        width: 97
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccd13959f2ff264a8302a485519c157
+      internalID: 864529993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Escorpeao idle-Sheet_0: -634690664
+      Escorpeao idle-Sheet_1: -362621126
+      Escorpeao idle-Sheet_10: -1561405161
+      Escorpeao idle-Sheet_11: 60769825
+      Escorpeao idle-Sheet_12: -249047958
+      Escorpeao idle-Sheet_13: -709202330
+      Escorpeao idle-Sheet_14: 458219544
+      Escorpeao idle-Sheet_15: -1561915477
+      Escorpeao idle-Sheet_16: -1444491360
+      Escorpeao idle-Sheet_17: -1647926376
+      Escorpeao idle-Sheet_18: -1763308308
+      Escorpeao idle-Sheet_19: -147874186
+      Escorpeao idle-Sheet_2: 165854499
+      Escorpeao idle-Sheet_20: -1208482401
+      Escorpeao idle-Sheet_21: -1988356370
+      Escorpeao idle-Sheet_22: -948660766
+      Escorpeao idle-Sheet_23: -1709447294
+      Escorpeao idle-Sheet_24: -1550239118
+      Escorpeao idle-Sheet_25: 423455100
+      Escorpeao idle-Sheet_26: 1384456790
+      Escorpeao idle-Sheet_27: 1109670150
+      Escorpeao idle-Sheet_28: -834074176
+      Escorpeao idle-Sheet_29: 325255958
+      Escorpeao idle-Sheet_3: -587867649
+      Escorpeao idle-Sheet_30: -1926919002
+      Escorpeao idle-Sheet_31: 1267319864
+      Escorpeao idle-Sheet_32: 554822992
+      Escorpeao idle-Sheet_33: 445763669
+      Escorpeao idle-Sheet_34: 754313891
+      Escorpeao idle-Sheet_35: 1254705515
+      Escorpeao idle-Sheet_36: -1367701990
+      Escorpeao idle-Sheet_37: 1995867569
+      Escorpeao idle-Sheet_38: -1483089938
+      Escorpeao idle-Sheet_39: 864529993
+      Escorpeao idle-Sheet_4: -1024221167
+      Escorpeao idle-Sheet_5: 1668819700
+      Escorpeao idle-Sheet_6: 1834717191
+      Escorpeao idle-Sheet_7: 599376577
+      Escorpeao idle-Sheet_8: -1010673750
+      Escorpeao idle-Sheet_9: 947999832
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,17 +11,22 @@ public class Boss_3 : MonoBehaviour
     private bool isParado = false, podeAtacarNovamente=true;
     private int cont = 0;
     public int dano = 10;
-    public GameObject Espinho1, Espinho2, Espinho3, Espinho4, Espinho5, Espinho6;
+    public GameObject Espinho1, Espinho2, Espinho3, Espinho4;
     public SpriteRenderer cor;
-    
+    public SpriteRenderer cor2;
+
     public CordeiroScriptBoss cordeiro;
 
-    public AudioSource somDano, somNascendo;
+    public AudioSource somDano, somNascendo, somAtaque, musicaBoss, somMorte;
+    public GameObject chifre;
+
 
     void Start()
     {
+        AudioController.GetInstance().StopAudio();
         anim = gameObject.GetComponent<Animator>();
         StartCoroutine(comecar());
+        StartCoroutine(comecarMusica());
     }
 
     void Update()
@@ -32,7 +37,6 @@ public class Boss_3 : MonoBehaviour
             {
                 StopAllCoroutines();
                 StartCoroutine(atacar());
-                Debug.Log("alaoalao");
             }
             else
                 StopCoroutine(atacar());
@@ -48,22 +52,27 @@ public class Boss_3 : MonoBehaviour
             anim.SetBool("morte", true);
             isParado = false;
         }
+        if (GameController.morreu)
+            musicaBoss.Stop();
     }
 
     void OnTriggerEnter2D(Collider2D other)
    {
         if(other.tag == "AtaquePlayer")
-        {
             recebeDano();
-        }
    }
 
     private IEnumerator comecar()
     {
         cordeiro.ativo = false;  /*Destaivando os controles do personagem*/
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(5);
         cordeiro.ativo = true;  /*Reativando os controles do personagem*/
         isParado = true;
+    }
+    private IEnumerator comecarMusica()
+    {
+        yield return new WaitForSeconds(4);
+        musicaBoss.Play();
     }
 
     private IEnumerator atacar()
@@ -79,24 +88,18 @@ public class Boss_3 : MonoBehaviour
             podeAtacarNovamente = true;
         
 
-        Espinho1.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
+        Espinho1.transform.position = new Vector2(Random.Range(-8.6f, 2.45f), Espinho1.transform.position.y);
         Espinho1.SetActive(true);        
-        Espinho2.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
+        Espinho2.transform.position = new Vector2(Random.Range(-8.6f, 2.45f), Espinho2.transform.position.y);
         Espinho2.SetActive(true);  
-        Espinho3.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
+        Espinho3.transform.position = new Vector2(Random.Range(-8.6f, 2.45f), Espinho3.transform.position.y);
         Espinho3.SetActive(true);       
-        Espinho4.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
+        Espinho4.transform.position = new Vector2(Random.Range(-8.6f, 2.45f), Espinho4.transform.position.y);
         Espinho4.SetActive(true);
-        Espinho5.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
-        Espinho5.SetActive(true);       
-        Espinho6.transform.position = new Vector2(Random.Range(-9f, 7.31f), Espinho1.transform.position.y);
-        Espinho6.SetActive(true);
-
     }
 
     private void terminarAtaque()
     {
-        Debug.Log("Ataque acabou!");
         anim.SetBool("ataque", false);
         isParado = true;
         podeAtacarNovamente = true;
@@ -105,15 +108,20 @@ public class Boss_3 : MonoBehaviour
 
     private void terminarDano()
     {
-        Debug.Log("Dano acabou!");
         isParado = true;
         anim.SetBool("dano", false);
     }
 
     private void terminarMorte()
     {
-        Debug.Log("Morte acabou!");
         Destroy(gameObject);
+        Destroy(cor.gameObject);
+        Destroy(cor2.gameObject);
+        Destroy(Espinho1);
+        Destroy(Espinho2);
+        Destroy(Espinho3);
+        Destroy(Espinho4);
+        chifre.SetActive(true);
         GameObject.FindGameObjectWithTag("ProxFase").SetActive(true);     /*"Spawnando o objeto que far� o jogador zerar o jogo"*/
     }
 
@@ -140,12 +148,24 @@ public class Boss_3 : MonoBehaviour
             vida = 0;
             cor.transform.localScale = new Vector3(0, 0, 0);
             anim.SetBool("morte", true);
-            Debug.Log("inimigo mrreu");
+            musicaBoss.Stop();
         }
     }
 
     public void tocarSomDano()
     {
         somDano.Play();
+    }
+    public void tocarSomAtaque()
+    {
+        somAtaque.Play();
+    }
+    public void tocarSomNascendo()
+    {
+        somNascendo.Play();
+    }
+    public void tocarSomMorte()
+    {
+        somMorte.Play();
     }
 }
