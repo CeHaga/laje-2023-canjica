@@ -210,17 +210,22 @@ public class CordeiroScript : MonoBehaviour
 
     IEnumerator verificaBugs()
     {
-        int teste = 0;
+        int teste1 = 0, teste2=0;
         if (animator.GetBool("Ataque"))
-            teste++;
-        yield return new WaitForSeconds(2);
+            teste1++;
+        if (animator.GetBool("Desvio"))
+            teste2++;
+        yield return new WaitForSeconds(1.5f);
         if (animator.GetBool("Ataque"))
-            teste++;
+            teste1++;
+        if (animator.GetBool("Desvio"))
+            teste2++;
 
-        if (teste == 2)
+        if (teste1 == 2 || teste2 == 2)
         {
             animator.SetBool("Ataque", false);
-            if(GameObject.FindGameObjectWithTag("AtaquePlayer") != null)
+            animator.SetBool("Desvio", false);
+            if (GameObject.FindGameObjectWithTag("AtaquePlayer") != null)
                 GameObject.FindGameObjectWithTag("AtaquePlayer").SetActive(false);
             ataqueEmAndamento = false;
             inimigo.ataquePlayer = true;
